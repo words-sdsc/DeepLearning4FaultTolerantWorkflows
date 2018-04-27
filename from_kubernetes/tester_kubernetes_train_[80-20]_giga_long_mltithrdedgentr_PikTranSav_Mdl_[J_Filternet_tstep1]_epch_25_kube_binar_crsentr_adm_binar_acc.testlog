@@ -1,0 +1,98 @@
+/usr/local/lib/python3.5/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Creating model...
+Initiating parallel GPU model
+2018-03-14 07:27:12.952649: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-03-14 07:27:13.511288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:3d:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-14 07:27:13.923045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:3e:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-14 07:27:14.339976: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:60:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-14 07:27:14.771690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 3 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:61:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-14 07:27:14.776544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Device peer to peer matrix
+2018-03-14 07:27:14.776665: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1126] DMA: 0 1 2 3 
+2018-03-14 07:27:14.776675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 0:   Y Y Y Y 
+2018-03-14 07:27:14.776682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 1:   Y Y Y Y 
+2018-03-14 07:27:14.776697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 2:   Y Y Y Y 
+2018-03-14 07:27:14.776705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 3:   Y Y Y Y 
+2018-03-14 07:27:14.776718: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:3d:00.0, compute capability: 6.1)
+2018-03-14 07:27:14.776729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:3e:00.0, compute capability: 6.1)
+2018-03-14 07:27:14.776739: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:2) -> (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:60:00.0, compute capability: 6.1)
+2018-03-14 07:27:14.776747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:3) -> (device: 3, name: GeForce GTX 1080 Ti, pci bus id: 0000:61:00.0, compute capability: 6.1)
+Compiling...
+Loading Model weights before Testing
+Calling printTestResults() for testing the model:
+Tester function called...using all test files
+# of X_test files detected:  12
+# of Y_test files detected:  12
+Loading X_test file #  0 Part1_X_test_giga_long__file_1_1.pickle
+Loading Y_test file #  0 Part1_Y_test_giga_long__file_1_1.pickle
+####
+Loading X_test file #  1 Part1_X_test_giga_long__file_1_2.pickle
+Loading Y_test file #  1 Part1_Y_test_giga_long__file_1_2.pickle
+####
+Loading X_test file #  2 Part1_X_test_giga_long__file_1_3.pickle
+Loading Y_test file #  2 Part1_Y_test_giga_long__file_1_3.pickle
+####
+Loading X_test file #  3 Part1_X_test_giga_long__file_1_4.pickle
+Loading Y_test file #  3 Part1_Y_test_giga_long__file_1_4.pickle
+####
+Loading X_test file #  4 Part1_X_test_giga_long__file_1_5.pickle
+Loading Y_test file #  4 Part1_Y_test_giga_long__file_1_5.pickle
+####
+Loading X_test file #  5 Part1_X_test_giga_long__file_1_6.pickle
+Loading Y_test file #  5 Part1_Y_test_giga_long__file_1_6.pickle
+####
+Loading X_test file #  6 Part2_X_test_giga_long__file_1_1.pickle
+Loading Y_test file #  6 Part2_Y_test_giga_long__file_1_1.pickle
+####
+Loading X_test file #  7 Part2_X_test_giga_long__file_1_2.pickle
+Loading Y_test file #  7 Part2_Y_test_giga_long__file_1_2.pickle
+####
+Loading X_test file #  8 Part2_X_test_giga_long__file_1_3.pickle
+Loading Y_test file #  8 Part2_Y_test_giga_long__file_1_3.pickle
+####
+Loading X_test file #  9 Part2_X_test_giga_long__file_1_4.pickle
+Loading Y_test file #  9 Part2_Y_test_giga_long__file_1_4.pickle
+####
+Loading X_test file #  10 Part2_X_test_giga_long__file_1_5.pickle
+Loading Y_test file #  10 Part2_Y_test_giga_long__file_1_5.pickle
+####
+Loading X_test file #  11 Part2_X_test_giga_long__file_1_6.pickle
+Loading Y_test file #  11 Part2_Y_test_giga_long__file_1_6.pickle
+####
+********* Test Results Start **************
+********* Model Fingerprint >> ************
+comet_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_25_kube_binar_crsentr_adm_binar_acc_tsteps1.py
+comet_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_25_kube_binar_crsentr_adm_binar_acc_tsteps1.py
+comet_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_25_kube_binar_crsentr_adm_binar_acc_tsteps1.py
+comet_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_25_kube_binar_crsentr_adm_binar_acc_tsteps1.py
+comet_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_25_kube_binar_crsentr_adm_binar_acc_tsteps1.py
+********* Model Fingerprint << ************
+Len of Y_true :  3517991
+Len of Y_pred :  3517991
+Overall accuracy on test set:  0.8381869083803796
+Calculating Score: 
+precision    : [0.85003639 0.81396985]
+recall       : [0.90327403 0.72646426]
+fscore       : [0.87584695 0.76773164]
+support      : [2222950 1295041]
+Confusion matrix:
+Predicted      0.0      1.0      All
+True                                
+0          2007933   215017  2222950
+1           354240   940801  1295041
+All        2362173  1155818  3517991
+*********Test Results End**************
+Test Program has reach the last line of execution

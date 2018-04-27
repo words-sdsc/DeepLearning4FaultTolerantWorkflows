@@ -1,0 +1,123 @@
+/usr/local/lib/python3.5/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Creating model...
+Initiating parallel GPU model
+2018-03-29 12:59:33.597556: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-03-29 12:59:34.485826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:3d:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:35.048137: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:3e:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:35.655357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:60:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:36.319941: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 3 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:61:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:36.896504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 4 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:b1:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:37.467504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 5 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:b2:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:38.045741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 6 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:da:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:38.622164: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 7 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:db:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-29 12:59:38.650699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1227] Device peer to peer matrix
+2018-03-29 12:59:38.651155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1233] DMA: 0 1 2 3 4 5 6 7 
+2018-03-29 12:59:38.651162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 0:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651166: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 1:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 2:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 3:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 4:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651177: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 5:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 6:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 7:   Y Y Y Y Y Y Y Y 
+2018-03-29 12:59:38.651199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2018-03-29 12:59:40.666304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10415 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:3d:00.0, compute capability: 6.1)
+2018-03-29 12:59:40.775095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10415 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:3e:00.0, compute capability: 6.1)
+2018-03-29 12:59:40.880112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10415 MB memory) -> physical GPU (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:60:00.0, compute capability: 6.1)
+2018-03-29 12:59:40.980840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 10415 MB memory) -> physical GPU (device: 3, name: GeForce GTX 1080 Ti, pci bus id: 0000:61:00.0, compute capability: 6.1)
+2018-03-29 12:59:41.068493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 10415 MB memory) -> physical GPU (device: 4, name: GeForce GTX 1080 Ti, pci bus id: 0000:b1:00.0, compute capability: 6.1)
+2018-03-29 12:59:41.156545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 10415 MB memory) -> physical GPU (device: 5, name: GeForce GTX 1080 Ti, pci bus id: 0000:b2:00.0, compute capability: 6.1)
+2018-03-29 12:59:41.248423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 10415 MB memory) -> physical GPU (device: 6, name: GeForce GTX 1080 Ti, pci bus id: 0000:da:00.0, compute capability: 6.1)
+2018-03-29 12:59:41.338241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 10415 MB memory) -> physical GPU (device: 7, name: GeForce GTX 1080 Ti, pci bus id: 0000:db:00.0, compute capability: 6.1)
+Compiling...
+Loading Model weights before Testing
+Calling printTestResults() for testing the model:
+Tester function called...using all test files
+# of X_test files detected:  12
+# of Y_test files detected:  12
+Loading X_test file #  0 Part1_X_test_giga_long__file_1_1.pickle
+Loading Y_test file #  0 Part1_Y_test_giga_long__file_1_1.pickle
+####
+Loading X_test file #  1 Part1_X_test_giga_long__file_1_2.pickle
+Loading Y_test file #  1 Part1_Y_test_giga_long__file_1_2.pickle
+####
+Loading X_test file #  2 Part1_X_test_giga_long__file_1_3.pickle
+Loading Y_test file #  2 Part1_Y_test_giga_long__file_1_3.pickle
+####
+Loading X_test file #  3 Part1_X_test_giga_long__file_1_4.pickle
+Loading Y_test file #  3 Part1_Y_test_giga_long__file_1_4.pickle
+####
+Loading X_test file #  4 Part1_X_test_giga_long__file_1_5.pickle
+Loading Y_test file #  4 Part1_Y_test_giga_long__file_1_5.pickle
+####
+Loading X_test file #  5 Part1_X_test_giga_long__file_1_6.pickle
+Loading Y_test file #  5 Part1_Y_test_giga_long__file_1_6.pickle
+####
+Loading X_test file #  6 Part2_X_test_giga_long__file_1_1.pickle
+Loading Y_test file #  6 Part2_Y_test_giga_long__file_1_1.pickle
+####
+Loading X_test file #  7 Part2_X_test_giga_long__file_1_2.pickle
+Loading Y_test file #  7 Part2_Y_test_giga_long__file_1_2.pickle
+####
+Loading X_test file #  8 Part2_X_test_giga_long__file_1_3.pickle
+Loading Y_test file #  8 Part2_Y_test_giga_long__file_1_3.pickle
+####
+Loading X_test file #  9 Part2_X_test_giga_long__file_1_4.pickle
+Loading Y_test file #  9 Part2_Y_test_giga_long__file_1_4.pickle
+####
+Loading X_test file #  10 Part2_X_test_giga_long__file_1_5.pickle
+Loading Y_test file #  10 Part2_Y_test_giga_long__file_1_5.pickle
+####
+Loading X_test file #  11 Part2_X_test_giga_long__file_1_6.pickle
+Loading Y_test file #  11 Part2_Y_test_giga_long__file_1_6.pickle
+####
+********* Test Results Start **************
+********* Model Fingerprint >> ************
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+********* Model Fingerprint << ************
+Len of Y_true :  3517991
+Len of Y_pred :  3517991
+Overall accuracy on test set:  0.8398685499763928
+Calculating Score: 
+precision    : [0.84927181 0.82030909]
+recall       : [0.90767269 0.72348211]
+fscore       : [0.87750162 0.7688591 ]
+support      : [2222950 1295041]
+Confusion matrix:
+Predicted      0.0      1.0      All
+True                                
+0          2017711   205239  2222950
+1           358102   936939  1295041
+All        2375813  1142178  3517991
+*********Test Results End**************
+Test Program has reach the last line of execution

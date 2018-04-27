@@ -1,0 +1,25 @@
+Mega files are large dataset files which eventually are split to 50-50
+**********************************************************************
+
+They contain daframes.
+mega df files higher up in the pipeline can be used for generating more splits (70-30 etc)
+mega df files for lower levels have 50-50 split baked into them.
+.
+.
+.
+Overall process:
+1] Read JOBS table into DataFrame (failed jobs, success jobs - and concatenate them)
+2] Read HBLI table into DataFrame (failed jobs, success jobs - and concatenate them)
+3] HBLI: Pivot, Scale : Ready for Join
+4] Jobs: categorical variables: Read for Join
+5] Join them and call the joined df as raw_samples
+.
+Higher Level Files are:
+[1] Files/DataFrames leading upto and including raw_samples are higher level files
+.
+.
+Lower Level Files are:
+[1] Files/DataFrames after raw_samples are lower level
+[2] raw_samples is partitioned into two dataframes: cleaned, takeoutdf (using train/test ratio)
+[3] cleaned  -> 3D np array is generated from cleaned -> X_final, Y_final
+[4] takeoutdf-> 3D np array is generated from cleaned -> X_test,  Y_test

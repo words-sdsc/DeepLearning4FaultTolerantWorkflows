@@ -1,0 +1,80 @@
+/home/a1singh/.local/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Creating model...
+Initiating parallel GPU model
+2018-03-14 09:05:03.632409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:06:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2018-03-14 09:05:03.828263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 1 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:86:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2018-03-14 09:05:03.828392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1223] Device peer to peer matrix
+2018-03-14 09:05:03.828434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1229] DMA: 0 1 
+2018-03-14 09:05:03.828458: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1239] 0:   Y N 
+2018-03-14 09:05:03.828474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1239] 1:   N Y 
+2018-03-14 09:05:03.828494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1308] Adding visible gpu devices: 0, 1
+2018-03-14 09:05:04.272810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10774 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:06:00.0, compute capability: 3.7)
+2018-03-14 09:05:04.366342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10774 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:86:00.0, compute capability: 3.7)
+Compiling...
+Loading Model weights before Testing
+Calling printTestResults() for testing the model:
+Tester function called...using all test files
+# of X_test files detected:  10
+# of Y_test files detected:  10
+Loading X_test file #  0 X_test_giga_long__file_1_10tstep2.pickle
+Loading Y_test file #  0 Y_test_giga_long__file_1_10tstep2.pickle
+####
+Loading X_test file #  1 X_test_giga_long__file_1_1tstep2.pickle
+Loading Y_test file #  1 Y_test_giga_long__file_1_1tstep2.pickle
+####
+Loading X_test file #  2 X_test_giga_long__file_1_2tstep2.pickle
+Loading Y_test file #  2 Y_test_giga_long__file_1_2tstep2.pickle
+####
+Loading X_test file #  3 X_test_giga_long__file_1_3tstep2.pickle
+Loading Y_test file #  3 Y_test_giga_long__file_1_3tstep2.pickle
+####
+Loading X_test file #  4 X_test_giga_long__file_1_4tstep2.pickle
+Loading Y_test file #  4 Y_test_giga_long__file_1_4tstep2.pickle
+####
+Loading X_test file #  5 X_test_giga_long__file_1_5tstep2.pickle
+Loading Y_test file #  5 Y_test_giga_long__file_1_5tstep2.pickle
+####
+Loading X_test file #  6 X_test_giga_long__file_1_6tstep2.pickle
+Loading Y_test file #  6 Y_test_giga_long__file_1_6tstep2.pickle
+####
+Loading X_test file #  7 X_test_giga_long__file_1_7tstep2.pickle
+Loading Y_test file #  7 Y_test_giga_long__file_1_7tstep2.pickle
+####
+Loading X_test file #  8 X_test_giga_long__file_1_8tstep2.pickle
+Loading Y_test file #  8 Y_test_giga_long__file_1_8tstep2.pickle
+####
+Loading X_test file #  9 X_test_giga_long__file_1_9tstep2.pickle
+Loading Y_test file #  9 Y_test_giga_long__file_1_9tstep2.pickle
+####
+********* Test Results Start **************
+********* Model Fingerprint >> ************
+comet_train_[80-20]_giga_long_multithreadedgenerator_PikTranSav_Mdl_[BIDIR_TAPER_tsteps2]_epochs_8_kube_binar_crsentr_adm_binar_acc.py
+comet_train_[80-20]_giga_long_multithreadedgenerator_PikTranSav_Mdl_[BIDIR_TAPER_tsteps2]_epochs_8_kube_binar_crsentr_adm_binar_acc.py
+comet_train_[80-20]_giga_long_multithreadedgenerator_PikTranSav_Mdl_[BIDIR_TAPER_tsteps2]_epochs_8_kube_binar_crsentr_adm_binar_acc.py
+comet_train_[80-20]_giga_long_multithreadedgenerator_PikTranSav_Mdl_[BIDIR_TAPER_tsteps2]_epochs_8_kube_binar_crsentr_adm_binar_acc.py
+comet_train_[80-20]_giga_long_multithreadedgenerator_PikTranSav_Mdl_[BIDIR_TAPER_tsteps2]_epochs_8_kube_binar_crsentr_adm_binar_acc.py
+********* Model Fingerprint << ************
+Len of Y_true :  3197252
+Len of Y_pred :  3197252
+Overall accuracy on test set:  0.81340820179329
+Calculating Score: 
+precision    : [0.83185713 0.77298758]
+recall       : [0.88923884 0.67723968]
+fscore       : [0.85959143 0.72195286]
+support      : [2053617 1143635]
+Confusion matrix:
+Predicted      0.0      1.0      All
+True                                
+0          1826156   227461  2053617
+1           369120   774515  1143635
+All        2195276  1001976  3197252
+*********Test Results End**************
+Test Program has reach the last line of execution

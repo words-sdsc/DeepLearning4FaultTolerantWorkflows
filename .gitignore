@@ -1,0 +1,6 @@
+*.h5
+*.pickle
+*.csv
+*.tar.gz
+*.tar
+*.log
