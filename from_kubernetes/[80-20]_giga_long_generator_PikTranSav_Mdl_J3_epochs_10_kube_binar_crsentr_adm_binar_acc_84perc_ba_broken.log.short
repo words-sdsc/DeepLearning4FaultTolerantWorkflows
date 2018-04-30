@@ -1,3 +1,452 @@
+/usr/local/lib/python3.5/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+# of X_train files detected:  48
+# of Y_train files detected:  48
+Creating model J3 (Pick Train Save)...
+Initiating parallel GPU model
+2018-03-08 00:39:11.163507: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2018-03-08 00:39:12.218210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:3d:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:12.766619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:3e:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:13.365617: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:60:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:14.011655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 3 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:61:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:14.622757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 4 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:b1:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:15.182767: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 5 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:b2:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:15.819352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 6 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:da:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:16.446046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 7 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:db:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-03-08 00:39:16.469553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Device peer to peer matrix
+2018-03-08 00:39:16.470159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1126] DMA: 0 1 2 3 4 5 6 7 
+2018-03-08 00:39:16.470169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 0:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 1:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 2:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 3:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470191: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 4:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 5:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 6:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1136] 7:   Y Y Y Y Y Y Y Y 
+2018-03-08 00:39:16.470236: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:3d:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:3e:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470260: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:2) -> (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:60:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:3) -> (device: 3, name: GeForce GTX 1080 Ti, pci bus id: 0000:61:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:4) -> (device: 4, name: GeForce GTX 1080 Ti, pci bus id: 0000:b1:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:5) -> (device: 5, name: GeForce GTX 1080 Ti, pci bus id: 0000:b2:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470290: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:6) -> (device: 6, name: GeForce GTX 1080 Ti, pci bus id: 0000:da:00.0, compute capability: 6.1)
+2018-03-08 00:39:16.470295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:7) -> (device: 7, name: GeForce GTX 1080 Ti, pci bus id: 0000:db:00.0, compute capability: 6.1)
+Compiling...
+Fit the Model...Calling fit_generator 
+Epoch 1/10
+Loading X_train file #  0 Part1_X_final_giga_long__file_1_1.pickle
+Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  0 Part1_Y_final_giga_long__file_1_1.pickle
+Loaded Y_final shape:  (351464, 1)
+
+  1/848 [..............................] - ETA: 17:15:49 - loss: 0.6931 - binary_accuracy: 0.5747
+  2/848 [..............................] - ETA: 8:55:43 - loss: 0.6929 - binary_accuracy: 0.6242 
+  3/848 [..............................] - ETA: 6:09:30 - loss: 0.6926 - binary_accuracy: 0.6363
+  4/848 [..............................] - ETA: 4:45:48 - loss: 0.6923 - binary_accuracy: 0.6420
+  5/848 [..............................] - ETA: 3:55:54 - loss: 0.6919 - binary_accuracy: 0.6471
+  6/848 [..............................] - ETA: 3:22:37 - loss: 0.6915 - binary_accuracy: 0.6497
+  7/848 [..............................] - ETA: 2:58:38 - loss: 0.6912 - binary_accuracy: 0.6511
+  8/848 [..............................] - ETA: 2:40:43 - loss: 0.6908 - binary_accuracy: 0.6523
+  9/848 [..............................] - ETA: 2:26:43 - loss: 0.6904 - binary_accuracy: 0.6527
+ 10/848 [..............................] - ETA: 2:15:41 - loss: 0.6900 - binary_accuracy: 0.6535
+ 11/848 [..............................] - ETA: 2:06:27 - loss: 0.6896 - binary_accuracy: 0.6546
+ 12/848 [..............................] - ETA: 1:58:49 - loss: 0.6892 - binary_accuracy: 0.6553Loading X_train file #  1 Part1_X_final_giga_long__file_1_2.pickle
+
+ 13/848 [..............................] - ETA: 1:52:26 - loss: 0.6887 - binary_accuracy: 0.6553
+ 14/848 [..............................] - ETA: 1:46:55 - loss: 0.6883 - binary_accuracy: 0.6559
+ 15/848 [..............................] - ETA: 1:42:04 - loss: 0.6878 - binary_accuracy: 0.6561
+ 16/848 [..............................] - ETA: 1:37:51 - loss: 0.6873 - binary_accuracy: 0.6564
+ 17/848 [..............................] - ETA: 1:34:05 - loss: 0.6868 - binary_accuracy: 0.6565
+ 18/848 [..............................] - ETA: 1:30:58 - loss: 0.6862 - binary_accuracy: 0.6567
+ 19/848 [..............................] - ETA: 1:27:59 - loss: 0.6857 - binary_accuracy: 0.6565
+ 20/848 [..............................] - ETA: 1:25:22 - loss: 0.6852 - binary_accuracy: 0.6566
+ 21/848 [..............................] - ETA: 1:21:17 - loss: 0.6840 - binary_accuracy: 0.6610Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  1 Part1_Y_final_giga_long__file_1_2.pickle
+Loaded Y_final shape:  (351464, 1)
+
+ 22/848 [..............................] - ETA: 2:18:14 - loss: 0.6834 - binary_accuracy: 0.6608
+ 23/848 [..............................] - ETA: 2:13:41 - loss: 0.6828 - binary_accuracy: 0.6605
+ 24/848 [..............................] - ETA: 2:09:24 - loss: 0.6823 - binary_accuracy: 0.6596
+ 25/848 [..............................] - ETA: 2:05:28 - loss: 0.6817 - binary_accuracy: 0.6595
+ 26/848 [..............................] - ETA: 2:01:49 - loss: 0.6810 - binary_accuracy: 0.6590
+ 27/848 [..............................] - ETA: 1:58:37 - loss: 0.6803 - binary_accuracy: 0.6590
+ 28/848 [..............................] - ETA: 1:55:34 - loss: 0.6796 - binary_accuracy: 0.6589
+ 29/848 [>.............................] - ETA: 1:52:46 - loss: 0.6788 - binary_accuracy: 0.6589
+ 30/848 [>.............................] - ETA: 1:50:16 - loss: 0.6780 - binary_accuracy: 0.6586
+ 31/848 [>.............................] - ETA: 1:47:39 - loss: 0.6772 - binary_accuracy: 0.6584
+ 32/848 [>.............................] - ETA: 1:45:26 - loss: 0.6763 - binary_accuracy: 0.6585
+ 33/848 [>.............................] - ETA: 1:43:11 - loss: 0.6756 - binary_accuracy: 0.6582
+ 34/848 [>.............................] - ETA: 1:41:05 - loss: 0.6746 - binary_accuracy: 0.6582
+ 35/848 [>.............................] - ETA: 1:39:03 - loss: 0.6738 - binary_accuracy: 0.6581
+ 36/848 [>.............................] - ETA: 1:37:18 - loss: 0.6729 - binary_accuracy: 0.6580
+ 37/848 [>.............................] - ETA: 1:35:36 - loss: 0.6721 - binary_accuracy: 0.6579
+ 38/848 [>.............................] - ETA: 1:34:06 - loss: 0.6713 - binary_accuracy: 0.6578
+ 39/848 [>.............................] - ETA: 1:32:30 - loss: 0.6705 - binary_accuracy: 0.6579
+ 40/848 [>.............................] - ETA: 1:31:01 - loss: 0.6699 - binary_accuracy: 0.6577Loading X_train file #  2 Part1_X_final_giga_long__file_1_3.pickle
+
+ 41/848 [>.............................] - ETA: 1:29:41 - loss: 0.6692 - binary_accuracy: 0.6577
+ 42/848 [>.............................] - ETA: 1:27:28 - loss: 0.6613 - binary_accuracy: 0.6658Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  2 Part1_Y_final_giga_long__file_1_3.pickle
+Loaded Y_final shape:  (351464, 1)
+
+ 43/848 [>.............................] - ETA: 1:57:03 - loss: 0.6573 - binary_accuracy: 0.6697
+ 44/848 [>.............................] - ETA: 1:55:05 - loss: 0.6534 - binary_accuracy: 0.6734
+ 45/848 [>.............................] - ETA: 1:53:09 - loss: 0.6495 - binary_accuracy: 0.6769
+ 46/848 [>.............................] - ETA: 1:51:22 - loss: 0.6456 - binary_accuracy: 0.6802
+ 47/848 [>.............................] - ETA: 1:49:35 - loss: 0.6417 - binary_accuracy: 0.6834
+ 48/848 [>.............................] - ETA: 1:47:57 - loss: 0.6379 - binary_accuracy: 0.6864
+ 49/848 [>.............................] - ETA: 1:46:19 - loss: 0.6340 - binary_accuracy: 0.6894
+ 50/848 [>.............................] - ETA: 1:44:48 - loss: 0.6303 - binary_accuracy: 0.6923
+ 51/848 [>.............................] - ETA: 1:43:18 - loss: 0.6270 - binary_accuracy: 0.6949
+ 52/848 [>.............................] - ETA: 1:41:55 - loss: 0.6239 - binary_accuracy: 0.6974
+ 53/848 [>.............................] - ETA: 1:40:31 - loss: 0.6209 - binary_accuracy: 0.6999
+ 54/848 [>.............................] - ETA: 1:39:10 - loss: 0.6178 - binary_accuracy: 0.7024
+ 55/848 [>.............................] - ETA: 1:37:52 - loss: 0.6148 - binary_accuracy: 0.7047
+ 56/848 [>.............................] - ETA: 1:36:40 - loss: 0.6119 - binary_accuracy: 0.7070
+ 57/848 [=>............................] - ETA: 1:35:27 - loss: 0.6090 - binary_accuracy: 0.7091
+ 58/848 [=>............................] - ETA: 1:34:19 - loss: 0.6061 - binary_accuracy: 0.7113
+ 59/848 [=>............................] - ETA: 1:33:11 - loss: 0.6033 - binary_accuracy: 0.7133
+ 60/848 [=>............................] - ETA: 1:32:08 - loss: 0.6006 - binary_accuracy: 0.7153
+ 61/848 [=>............................] - ETA: 1:31:04 - loss: 0.5980 - binary_accuracy: 0.7171Loading X_train file #  3 Part1_X_final_giga_long__file_1_4.pickle
+
+ 62/848 [=>............................] - ETA: 1:30:03 - loss: 0.5956 - binary_accuracy: 0.7189
+ 63/848 [=>............................] - ETA: 1:28:32 - loss: 0.5950 - binary_accuracy: 0.7194Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  3 Part1_Y_final_giga_long__file_1_4.pickle
+Loaded Y_final shape:  (351464, 1)
+
+ 64/848 [=>............................] - ETA: 1:48:59 - loss: 0.5994 - binary_accuracy: 0.7167
+ 65/848 [=>............................] - ETA: 1:47:40 - loss: 0.6033 - binary_accuracy: 0.7141
+ 66/848 [=>............................] - ETA: 1:46:29 - loss: 0.6066 - binary_accuracy: 0.7116
+ 67/848 [=>............................] - ETA: 1:45:17 - loss: 0.6094 - binary_accuracy: 0.7091
+ 68/848 [=>............................] - ETA: 1:44:09 - loss: 0.6118 - binary_accuracy: 0.7066
+ 69/848 [=>............................] - ETA: 1:43:01 - loss: 0.6137 - binary_accuracy: 0.7043
+ 70/848 [=>............................] - ETA: 1:42:00 - loss: 0.6153 - binary_accuracy: 0.7021
+ 71/848 [=>............................] - ETA: 1:40:53 - loss: 0.6168 - binary_accuracy: 0.6999
+ 72/848 [=>............................] - ETA: 1:39:49 - loss: 0.6180 - binary_accuracy: 0.6978
+ 73/848 [=>............................] - ETA: 1:38:47 - loss: 0.6192 - binary_accuracy: 0.6958
+ 74/848 [=>............................] - ETA: 1:37:50 - loss: 0.6203 - binary_accuracy: 0.6938
+ 75/848 [=>............................] - ETA: 1:36:59 - loss: 0.6213 - binary_accuracy: 0.6918
+ 76/848 [=>............................] - ETA: 1:36:08 - loss: 0.6223 - binary_accuracy: 0.6899
+ 77/848 [=>............................] - ETA: 1:35:11 - loss: 0.6232 - binary_accuracy: 0.6881
+ 78/848 [=>............................] - ETA: 1:34:16 - loss: 0.6241 - binary_accuracy: 0.6862
+ 79/848 [=>............................] - ETA: 1:33:22 - loss: 0.6249 - binary_accuracy: 0.6845
+ 80/848 [=>............................] - ETA: 1:32:32 - loss: 0.6257 - binary_accuracy: 0.6828
+ 81/848 [=>............................] - ETA: 1:31:46 - loss: 0.6265 - binary_accuracy: 0.6812Loading X_train file #  4 Part1_X_final_giga_long__file_1_5.pickle
+
+ 82/848 [=>............................] - ETA: 1:31:01 - loss: 0.6272 - binary_accuracy: 0.6796
+ 83/848 [=>............................] - ETA: 1:30:11 - loss: 0.6280 - binary_accuracy: 0.6780
+ 84/848 [=>............................] - ETA: 1:29:01 - loss: 0.6288 - binary_accuracy: 0.6759Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  4 Part1_Y_final_giga_long__file_1_5.pickle
+Loaded Y_final shape:  (351464, 1)
+
+ 85/848 [==>...........................] - ETA: 1:43:21 - loss: 0.6294 - binary_accuracy: 0.6748
+ 86/848 [==>...........................] - ETA: 1:42:25 - loss: 0.6300 - binary_accuracy: 0.6738
+ 87/848 [==>...........................] - ETA: 1:41:29 - loss: 0.6305 - binary_accuracy: 0.6730
+ 88/848 [==>...........................] - ETA: 1:40:36 - loss: 0.6310 - binary_accuracy: 0.6720
+ 89/848 [==>...........................] - ETA: 1:39:48 - loss: 0.6315 - binary_accuracy: 0.6711
+ 90/848 [==>...........................] - ETA: 1:38:56 - loss: 0.6321 - binary_accuracy: 0.6701
+ 91/848 [==>...........................] - ETA: 1:38:05 - loss: 0.6326 - binary_accuracy: 0.6692
+ 92/848 [==>...........................] - ETA: 1:37:15 - loss: 0.6331 - binary_accuracy: 0.6683
+ 93/848 [==>...........................] - ETA: 1:36:27 - loss: 0.6336 - binary_accuracy: 0.6675
+ 94/848 [==>...........................] - ETA: 1:35:39 - loss: 0.6340 - binary_accuracy: 0.6666
+ 95/848 [==>...........................] - ETA: 1:34:53 - loss: 0.6345 - binary_accuracy: 0.6658
+ 96/848 [==>...........................] - ETA: 1:34:08 - loss: 0.6350 - binary_accuracy: 0.6650
+ 97/848 [==>...........................] - ETA: 1:33:24 - loss: 0.6354 - binary_accuracy: 0.6642
+ 98/848 [==>...........................] - ETA: 1:32:40 - loss: 0.6358 - binary_accuracy: 0.6635
+ 99/848 [==>...........................] - ETA: 1:31:58 - loss: 0.6363 - binary_accuracy: 0.6628
+100/848 [==>...........................] - ETA: 1:31:16 - loss: 0.6367 - binary_accuracy: 0.6620
+101/848 [==>...........................] - ETA: 1:30:34 - loss: 0.6371 - binary_accuracy: 0.6613
+102/848 [==>...........................] - ETA: 1:29:56 - loss: 0.6375 - binary_accuracy: 0.6606
+103/848 [==>...........................] - ETA: 1:29:18 - loss: 0.6379 - binary_accuracy: 0.6598Loading X_train file #  5 Part1_X_final_giga_long__file_1_6.pickle
+Loaded X_final shape:  (2, 1, 3541)
+Loading Y_train file #  5 Part1_Y_final_giga_long__file_1_6.pickle
+Loaded Y_final shape:  (2, 1)
+Loading X_train file #  6 Part1_X_final_giga_long__file_2_10.pickle
+
+104/848 [==>...........................] - ETA: 1:28:40 - loss: 0.6383 - binary_accuracy: 0.6592
+105/848 [==>...........................] - ETA: 1:27:43 - loss: 0.6383 - binary_accuracy: 0.6600Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  6 Part1_Y_final_giga_long__file_2_10.pickle
+Loaded Y_final shape:  (351464, 1)
+
+107/848 [==>...........................] - ETA: 1:36:23 - loss: 0.6382 - binary_accuracy: 0.6627
+108/848 [==>...........................] - ETA: 1:35:39 - loss: 0.6385 - binary_accuracy: 0.6622
+109/848 [==>...........................] - ETA: 1:34:56 - loss: 0.6388 - binary_accuracy: 0.6618
+110/848 [==>...........................] - ETA: 1:34:13 - loss: 0.6391 - binary_accuracy: 0.6613
+111/848 [==>...........................] - ETA: 1:33:31 - loss: 0.6394 - binary_accuracy: 0.6609
+112/848 [==>...........................] - ETA: 1:32:49 - loss: 0.6397 - binary_accuracy: 0.6605
+113/848 [==>...........................] - ETA: 1:32:09 - loss: 0.6400 - binary_accuracy: 0.6601
+114/848 [===>..........................] - ETA: 1:31:29 - loss: 0.6402 - binary_accuracy: 0.6597
+115/848 [===>..........................] - ETA: 1:30:50 - loss: 0.6405 - binary_accuracy: 0.6593
+116/848 [===>..........................] - ETA: 1:30:12 - loss: 0.6408 - binary_accuracy: 0.6588
+117/848 [===>..........................] - ETA: 1:29:35 - loss: 0.6410 - binary_accuracy: 0.6585
+118/848 [===>..........................] - ETA: 1:28:58 - loss: 0.6413 - binary_accuracy: 0.6581
+119/848 [===>..........................] - ETA: 1:28:21 - loss: 0.6415 - binary_accuracy: 0.6577
+120/848 [===>..........................] - ETA: 1:27:45 - loss: 0.6417 - binary_accuracy: 0.6573
+121/848 [===>..........................] - ETA: 1:27:10 - loss: 0.6419 - binary_accuracy: 0.6570
+122/848 [===>..........................] - ETA: 1:26:36 - loss: 0.6421 - binary_accuracy: 0.6567
+123/848 [===>..........................] - ETA: 1:26:01 - loss: 0.6423 - binary_accuracy: 0.6564
+124/848 [===>..........................] - ETA: 1:25:28 - loss: 0.6425 - binary_accuracy: 0.6560
+125/848 [===>..........................] - ETA: 1:24:57 - loss: 0.6428 - binary_accuracy: 0.6556Loading X_train file #  7 Part1_X_final_giga_long__file_2_11.pickle
+
+126/848 [===>..........................] - ETA: 1:24:32 - loss: 0.6429 - binary_accuracy: 0.6553
+127/848 [===>..........................] - ETA: 1:23:46 - loss: 0.6427 - binary_accuracy: 0.6561Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  7 Part1_Y_final_giga_long__file_2_11.pickle
+Loaded Y_final shape:  (351464, 1)
+
+128/848 [===>..........................] - ETA: 1:33:14 - loss: 0.6431 - binary_accuracy: 0.6554
+129/848 [===>..........................] - ETA: 1:32:44 - loss: 0.6434 - binary_accuracy: 0.6547
+130/848 [===>..........................] - ETA: 1:32:13 - loss: 0.6437 - binary_accuracy: 0.6540
+131/848 [===>..........................] - ETA: 1:31:43 - loss: 0.6440 - binary_accuracy: 0.6534
+132/848 [===>..........................] - ETA: 1:31:09 - loss: 0.6443 - binary_accuracy: 0.6528
+133/848 [===>..........................] - ETA: 1:30:35 - loss: 0.6446 - binary_accuracy: 0.6521
+134/848 [===>..........................] - ETA: 1:30:02 - loss: 0.6449 - binary_accuracy: 0.6515
+135/848 [===>..........................] - ETA: 1:29:29 - loss: 0.6452 - binary_accuracy: 0.6509
+136/848 [===>..........................] - ETA: 1:28:55 - loss: 0.6455 - binary_accuracy: 0.6504
+137/848 [===>..........................] - ETA: 1:28:24 - loss: 0.6458 - binary_accuracy: 0.6498
+138/848 [===>..........................] - ETA: 1:27:53 - loss: 0.6461 - binary_accuracy: 0.6493
+139/848 [===>..........................] - ETA: 1:27:22 - loss: 0.6463 - binary_accuracy: 0.6487
+140/848 [===>..........................] - ETA: 1:26:51 - loss: 0.6466 - binary_accuracy: 0.6482
+141/848 [===>..........................] - ETA: 1:26:20 - loss: 0.6469 - binary_accuracy: 0.6476
+142/848 [====>.........................] - ETA: 1:25:50 - loss: 0.6471 - binary_accuracy: 0.6471
+143/848 [====>.........................] - ETA: 1:25:21 - loss: 0.6474 - binary_accuracy: 0.6466
+144/848 [====>.........................] - ETA: 1:24:51 - loss: 0.6476 - binary_accuracy: 0.6461
+145/848 [====>.........................] - ETA: 1:24:22 - loss: 0.6479 - binary_accuracy: 0.6456
+146/848 [====>.........................] - ETA: 1:23:54 - loss: 0.6481 - binary_accuracy: 0.6451Loading X_train file #  8 Part1_X_final_giga_long__file_2_12.pickle
+Loaded X_final shape:  (2, 1, 3541)
+Loading Y_train file #  8 Part1_Y_final_giga_long__file_2_12.pickle
+Loaded Y_final shape:  (2, 1)
+Loading X_train file #  9 Part1_X_final_giga_long__file_2_7.pickle
+
+147/848 [====>.........................] - ETA: 1:23:27 - loss: 0.6484 - binary_accuracy: 0.6446
+148/848 [====>.........................] - ETA: 1:22:47 - loss: 0.6482 - binary_accuracy: 0.6453
+149/848 [====>.........................] - ETA: 1:22:07 - loss: 0.6498 - binary_accuracy: 0.6410Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  9 Part1_Y_final_giga_long__file_2_7.pickle
+Loaded Y_final shape:  (351464, 1)
+
+150/848 [====>.........................] - ETA: 1:29:07 - loss: 0.6496 - binary_accuracy: 0.6419
+151/848 [====>.........................] - ETA: 1:28:35 - loss: 0.6493 - binary_accuracy: 0.6427
+152/848 [====>.........................] - ETA: 1:28:05 - loss: 0.6490 - binary_accuracy: 0.6436
+153/848 [====>.........................] - ETA: 1:27:35 - loss: 0.6487 - binary_accuracy: 0.6444
+154/848 [====>.........................] - ETA: 1:27:05 - loss: 0.6485 - binary_accuracy: 0.6453
+155/848 [====>.........................] - ETA: 1:26:35 - loss: 0.6482 - binary_accuracy: 0.6461
+156/848 [====>.........................] - ETA: 1:26:06 - loss: 0.6479 - binary_accuracy: 0.6469
+157/848 [====>.........................] - ETA: 1:25:37 - loss: 0.6476 - binary_accuracy: 0.6477
+158/848 [====>.........................] - ETA: 1:25:08 - loss: 0.6473 - binary_accuracy: 0.6485
+159/848 [====>.........................] - ETA: 1:24:41 - loss: 0.6470 - binary_accuracy: 0.6493
+160/848 [====>.........................] - ETA: 1:24:14 - loss: 0.6466 - binary_accuracy: 0.6501
+161/848 [====>.........................] - ETA: 1:23:45 - loss: 0.6463 - binary_accuracy: 0.6509
+162/848 [====>.........................] - ETA: 1:23:19 - loss: 0.6459 - binary_accuracy: 0.6516
+163/848 [====>.........................] - ETA: 1:22:51 - loss: 0.6455 - binary_accuracy: 0.6524
+164/848 [====>.........................] - ETA: 1:22:25 - loss: 0.6451 - binary_accuracy: 0.6531
+165/848 [====>.........................] - ETA: 1:21:59 - loss: 0.6446 - binary_accuracy: 0.6538
+166/848 [====>.........................] - ETA: 1:21:32 - loss: 0.6442 - binary_accuracy: 0.6545
+167/848 [====>.........................] - ETA: 1:21:06 - loss: 0.6437 - binary_accuracy: 0.6553
+168/848 [====>.........................] - ETA: 1:20:40 - loss: 0.6431 - binary_accuracy: 0.6560Loading X_train file #  10 Part1_X_final_giga_long__file_2_8.pickle
+
+169/848 [====>.........................] - ETA: 1:20:15 - loss: 0.6425 - binary_accuracy: 0.6567
+170/848 [=====>........................] - ETA: 1:19:40 - loss: 0.6432 - binary_accuracy: 0.6558Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  10 Part1_Y_final_giga_long__file_2_8.pickle
+Loaded Y_final shape:  (351464, 1)
+
+171/848 [=====>........................] - ETA: 1:26:32 - loss: 0.6440 - binary_accuracy: 0.6547
+172/848 [=====>........................] - ETA: 1:26:09 - loss: 0.6447 - binary_accuracy: 0.6537
+173/848 [=====>........................] - ETA: 1:25:42 - loss: 0.6455 - binary_accuracy: 0.6527
+174/848 [=====>........................] - ETA: 1:25:15 - loss: 0.6463 - binary_accuracy: 0.6516
+175/848 [=====>........................] - ETA: 1:24:49 - loss: 0.6470 - binary_accuracy: 0.6506
+176/848 [=====>........................] - ETA: 1:24:21 - loss: 0.6477 - binary_accuracy: 0.6497
+177/848 [=====>........................] - ETA: 1:23:55 - loss: 0.6483 - binary_accuracy: 0.6488
+178/848 [=====>........................] - ETA: 1:23:29 - loss: 0.6489 - binary_accuracy: 0.6478
+179/848 [=====>........................] - ETA: 1:23:04 - loss: 0.6495 - binary_accuracy: 0.6469
+180/848 [=====>........................] - ETA: 1:22:39 - loss: 0.6500 - binary_accuracy: 0.6459
+181/848 [=====>........................] - ETA: 1:22:15 - loss: 0.6505 - binary_accuracy: 0.6450
+182/848 [=====>........................] - ETA: 1:21:50 - loss: 0.6510 - binary_accuracy: 0.6441
+183/848 [=====>........................] - ETA: 1:21:27 - loss: 0.6514 - binary_accuracy: 0.6432
+184/848 [=====>........................] - ETA: 1:21:03 - loss: 0.6518 - binary_accuracy: 0.6423
+185/848 [=====>........................] - ETA: 1:20:40 - loss: 0.6521 - binary_accuracy: 0.6415
+186/848 [=====>........................] - ETA: 1:20:17 - loss: 0.6525 - binary_accuracy: 0.6406
+187/848 [=====>........................] - ETA: 1:19:53 - loss: 0.6528 - binary_accuracy: 0.6397
+188/848 [=====>........................] - ETA: 1:19:31 - loss: 0.6531 - binary_accuracy: 0.6389
+189/848 [=====>........................] - ETA: 1:19:09 - loss: 0.6534 - binary_accuracy: 0.6380Loading X_train file #  11 Part1_X_final_giga_long__file_2_9.pickle
+
+190/848 [=====>........................] - ETA: 1:18:47 - loss: 0.6537 - binary_accuracy: 0.6372
+191/848 [=====>........................] - ETA: 1:18:16 - loss: 0.6539 - binary_accuracy: 0.6365Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  11 Part1_Y_final_giga_long__file_2_9.pickle
+Loaded Y_final shape:  (351464, 1)
+
+192/848 [=====>........................] - ETA: 1:23:36 - loss: 0.6539 - binary_accuracy: 0.6362
+193/848 [=====>........................] - ETA: 1:23:12 - loss: 0.6540 - binary_accuracy: 0.6359
+194/848 [=====>........................] - ETA: 1:22:48 - loss: 0.6541 - binary_accuracy: 0.6356
+195/848 [=====>........................] - ETA: 1:22:24 - loss: 0.6541 - binary_accuracy: 0.6353
+196/848 [=====>........................] - ETA: 1:21:59 - loss: 0.6542 - binary_accuracy: 0.6351
+197/848 [=====>........................] - ETA: 1:21:35 - loss: 0.6542 - binary_accuracy: 0.6347
+198/848 [======>.......................] - ETA: 1:21:12 - loss: 0.6543 - binary_accuracy: 0.6344
+199/848 [======>.......................] - ETA: 1:20:48 - loss: 0.6543 - binary_accuracy: 0.6342
+200/848 [======>.......................] - ETA: 1:20:26 - loss: 0.6543 - binary_accuracy: 0.6340
+201/848 [======>.......................] - ETA: 1:20:03 - loss: 0.6543 - binary_accuracy: 0.6337
+202/848 [======>.......................] - ETA: 1:19:40 - loss: 0.6543 - binary_accuracy: 0.6335
+203/848 [======>.......................] - ETA: 1:19:18 - loss: 0.6543 - binary_accuracy: 0.6339
+204/848 [======>.......................] - ETA: 1:18:57 - loss: 0.6543 - binary_accuracy: 0.6342
+205/848 [======>.......................] - ETA: 1:18:35 - loss: 0.6542 - binary_accuracy: 0.6346
+206/848 [======>.......................] - ETA: 1:18:13 - loss: 0.6541 - binary_accuracy: 0.6351
+207/848 [======>.......................] - ETA: 1:17:52 - loss: 0.6540 - binary_accuracy: 0.6355
+208/848 [======>.......................] - ETA: 1:17:31 - loss: 0.6539 - binary_accuracy: 0.6358
+209/848 [======>.......................] - ETA: 1:17:10 - loss: 0.6537 - binary_accuracy: 0.6361Loading X_train file #  12 Part1_X_final_giga_long__file_3_13.pickle
+
+210/848 [======>.......................] - ETA: 1:16:49 - loss: 0.6535 - binary_accuracy: 0.6363
+211/848 [======>.......................] - ETA: 1:16:28 - loss: 0.6532 - binary_accuracy: 0.6366
+212/848 [======>.......................] - ETA: 1:15:59 - loss: 0.6523 - binary_accuracy: 0.6384Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  12 Part1_Y_final_giga_long__file_3_13.pickle
+Loaded Y_final shape:  (351464, 1)
+
+213/848 [======>.......................] - ETA: 1:20:22 - loss: 0.6527 - binary_accuracy: 0.6378
+214/848 [======>.......................] - ETA: 1:19:59 - loss: 0.6529 - binary_accuracy: 0.6373
+215/848 [======>.......................] - ETA: 1:19:37 - loss: 0.6531 - binary_accuracy: 0.6370
+216/848 [======>.......................] - ETA: 1:19:15 - loss: 0.6533 - binary_accuracy: 0.6367
+217/848 [======>.......................] - ETA: 1:18:54 - loss: 0.6533 - binary_accuracy: 0.6364
+218/848 [======>.......................] - ETA: 1:18:33 - loss: 0.6532 - binary_accuracy: 0.6360
+219/848 [======>.......................] - ETA: 1:18:11 - loss: 0.6530 - binary_accuracy: 0.6356
+220/848 [======>.......................] - ETA: 1:17:50 - loss: 0.6528 - binary_accuracy: 0.6358
+221/848 [======>.......................] - ETA: 1:17:29 - loss: 0.6525 - binary_accuracy: 0.6360
+222/848 [======>.......................] - ETA: 1:17:08 - loss: 0.6521 - binary_accuracy: 0.6363
+223/848 [======>.......................] - ETA: 1:16:49 - loss: 0.6519 - binary_accuracy: 0.6365
+224/848 [======>.......................] - ETA: 1:16:28 - loss: 0.6516 - binary_accuracy: 0.6367
+225/848 [======>.......................] - ETA: 1:16:09 - loss: 0.6512 - binary_accuracy: 0.6370
+226/848 [======>.......................] - ETA: 1:15:48 - loss: 0.6508 - binary_accuracy: 0.6372
+227/848 [=======>......................] - ETA: 1:15:29 - loss: 0.6503 - binary_accuracy: 0.6375
+228/848 [=======>......................] - ETA: 1:15:08 - loss: 0.6498 - binary_accuracy: 0.6377
+229/848 [=======>......................] - ETA: 1:14:48 - loss: 0.6492 - binary_accuracy: 0.6380
+230/848 [=======>......................] - ETA: 1:14:29 - loss: 0.6487 - binary_accuracy: 0.6383
+231/848 [=======>......................] - ETA: 1:14:10 - loss: 0.6481 - binary_accuracy: 0.6386Loading X_train file #  13 Part1_X_final_giga_long__file_3_14.pickle
+
+232/848 [=======>......................] - ETA: 1:13:52 - loss: 0.6475 - binary_accuracy: 0.6391
+233/848 [=======>......................] - ETA: 1:13:26 - loss: 0.6466 - binary_accuracy: 0.6395Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  13 Part1_Y_final_giga_long__file_3_14.pickle
+Loaded Y_final shape:  (351464, 1)
+
+234/848 [=======>......................] - ETA: 1:17:29 - loss: 0.6467 - binary_accuracy: 0.6394
+235/848 [=======>......................] - ETA: 1:17:09 - loss: 0.6468 - binary_accuracy: 0.6393
+236/848 [=======>......................] - ETA: 1:16:49 - loss: 0.6468 - binary_accuracy: 0.6394
+237/848 [=======>......................] - ETA: 1:16:29 - loss: 0.6467 - binary_accuracy: 0.6395
+238/848 [=======>......................] - ETA: 1:16:09 - loss: 0.6466 - binary_accuracy: 0.6398
+239/848 [=======>......................] - ETA: 1:15:50 - loss: 0.6463 - binary_accuracy: 0.6401
+240/848 [=======>......................] - ETA: 1:15:30 - loss: 0.6461 - binary_accuracy: 0.6405
+241/848 [=======>......................] - ETA: 1:15:11 - loss: 0.6457 - binary_accuracy: 0.6410
+242/848 [=======>......................] - ETA: 1:14:51 - loss: 0.6454 - binary_accuracy: 0.6414
+243/848 [=======>......................] - ETA: 1:14:33 - loss: 0.6450 - binary_accuracy: 0.6419
+244/848 [=======>......................] - ETA: 1:14:14 - loss: 0.6445 - binary_accuracy: 0.6424
+245/848 [=======>......................] - ETA: 1:13:55 - loss: 0.6441 - binary_accuracy: 0.6429
+246/848 [=======>......................] - ETA: 1:13:36 - loss: 0.6437 - binary_accuracy: 0.6433
+247/848 [=======>......................] - ETA: 1:13:18 - loss: 0.6433 - binary_accuracy: 0.6438
+248/848 [=======>......................] - ETA: 1:12:59 - loss: 0.6428 - binary_accuracy: 0.6443
+249/848 [=======>......................] - ETA: 1:12:41 - loss: 0.6424 - binary_accuracy: 0.6448
+250/848 [=======>......................] - ETA: 1:12:22 - loss: 0.6420 - binary_accuracy: 0.6453
+251/848 [=======>......................] - ETA: 1:12:05 - loss: 0.6416 - binary_accuracy: 0.6458Loading X_train file #  14 Part1_X_final_giga_long__file_3_15.pickle
+
+252/848 [=======>......................] - ETA: 1:11:47 - loss: 0.6411 - binary_accuracy: 0.6463
+253/848 [=======>......................] - ETA: 1:11:29 - loss: 0.6407 - binary_accuracy: 0.6467
+254/848 [=======>......................] - ETA: 1:11:05 - loss: 0.6390 - binary_accuracy: 0.6481Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  14 Part1_Y_final_giga_long__file_3_15.pickle
+Loaded Y_final shape:  (351464, 1)
+
+255/848 [========>.....................] - ETA: 1:14:34 - loss: 0.6384 - binary_accuracy: 0.6488
+256/848 [========>.....................] - ETA: 1:14:15 - loss: 0.6378 - binary_accuracy: 0.6495
+257/848 [========>.....................] - ETA: 1:13:57 - loss: 0.6371 - binary_accuracy: 0.6501
+258/848 [========>.....................] - ETA: 1:13:38 - loss: 0.6365 - binary_accuracy: 0.6508
+259/848 [========>.....................] - ETA: 1:13:20 - loss: 0.6359 - binary_accuracy: 0.6514
+260/848 [========>.....................] - ETA: 1:13:01 - loss: 0.6353 - binary_accuracy: 0.6520
+261/848 [========>.....................] - ETA: 1:12:43 - loss: 0.6346 - binary_accuracy: 0.6527
+262/848 [========>.....................] - ETA: 1:12:26 - loss: 0.6340 - binary_accuracy: 0.6533
+263/848 [========>.....................] - ETA: 1:12:07 - loss: 0.6333 - binary_accuracy: 0.6540
+264/848 [========>.....................] - ETA: 1:11:49 - loss: 0.6327 - binary_accuracy: 0.6546
+265/848 [========>.....................] - ETA: 1:11:31 - loss: 0.6320 - binary_accuracy: 0.6552
+266/848 [========>.....................] - ETA: 1:11:14 - loss: 0.6313 - binary_accuracy: 0.6559
+267/848 [========>.....................] - ETA: 1:10:56 - loss: 0.6306 - binary_accuracy: 0.6565
+268/848 [========>.....................] - ETA: 1:10:39 - loss: 0.6300 - binary_accuracy: 0.6572
+269/848 [========>.....................] - ETA: 1:10:21 - loss: 0.6293 - binary_accuracy: 0.6579
+270/848 [========>.....................] - ETA: 1:10:04 - loss: 0.6286 - binary_accuracy: 0.6585
+271/848 [========>.....................] - ETA: 1:09:47 - loss: 0.6280 - binary_accuracy: 0.6591
+272/848 [========>.....................] - ETA: 1:09:30 - loss: 0.6273 - binary_accuracy: 0.6598Loading X_train file #  15 Part1_X_final_giga_long__file_3_16.pickle
+
+273/848 [========>.....................] - ETA: 1:09:13 - loss: 0.6267 - binary_accuracy: 0.6604
+274/848 [========>.....................] - ETA: 1:08:56 - loss: 0.6260 - binary_accuracy: 0.6611
+275/848 [========>.....................] - ETA: 1:08:34 - loss: 0.6259 - binary_accuracy: 0.6614Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  15 Part1_Y_final_giga_long__file_3_16.pickle
+Loaded Y_final shape:  (351464, 1)
+
+276/848 [========>.....................] - ETA: 1:11:30 - loss: 0.6256 - binary_accuracy: 0.6614
+277/848 [========>.....................] - ETA: 1:11:14 - loss: 0.6253 - binary_accuracy: 0.6614
+278/848 [========>.....................] - ETA: 1:10:56 - loss: 0.6250 - binary_accuracy: 0.6617
+279/848 [========>.....................] - ETA: 1:10:38 - loss: 0.6246 - binary_accuracy: 0.6620
+280/848 [========>.....................] - ETA: 1:10:21 - loss: 0.6242 - binary_accuracy: 0.6623
+281/848 [========>.....................] - ETA: 1:10:04 - loss: 0.6237 - binary_accuracy: 0.6626
+282/848 [========>.....................] - ETA: 1:09:48 - loss: 0.6232 - binary_accuracy: 0.6632
+283/848 [=========>....................] - ETA: 1:09:31 - loss: 0.6226 - binary_accuracy: 0.6637
+284/848 [=========>....................] - ETA: 1:09:14 - loss: 0.6221 - binary_accuracy: 0.6642
+285/848 [=========>....................] - ETA: 1:08:57 - loss: 0.6215 - binary_accuracy: 0.6647
+286/848 [=========>....................] - ETA: 1:08:40 - loss: 0.6210 - binary_accuracy: 0.6652
+287/848 [=========>....................] - ETA: 1:08:24 - loss: 0.6204 - binary_accuracy: 0.6656
+288/848 [=========>....................] - ETA: 1:08:07 - loss: 0.6198 - binary_accuracy: 0.6661
+289/848 [=========>....................] - ETA: 1:07:51 - loss: 0.6191 - binary_accuracy: 0.6666
+290/848 [=========>....................] - ETA: 1:07:34 - loss: 0.6185 - binary_accuracy: 0.6671
+291/848 [=========>....................] - ETA: 1:07:18 - loss: 0.6178 - binary_accuracy: 0.6676
+292/848 [=========>....................] - ETA: 1:07:02 - loss: 0.6171 - binary_accuracy: 0.6681
+293/848 [=========>....................] - ETA: 1:06:46 - loss: 0.6164 - binary_accuracy: 0.6687Loading X_train file #  16 Part1_X_final_giga_long__file_3_17.pickle
+
+294/848 [=========>....................] - ETA: 1:06:30 - loss: 0.6157 - binary_accuracy: 0.6692
+295/848 [=========>....................] - ETA: 1:06:14 - loss: 0.6149 - binary_accuracy: 0.6698
+296/848 [=========>....................] - ETA: 1:05:54 - loss: 0.6140 - binary_accuracy: 0.6701Loaded X_final shape:  (351464, 1, 3541)
+Loading Y_train file #  16 Part1_Y_final_giga_long__file_3_17.pickle
+Loaded Y_final shape:  (351464, 1)
+
+297/848 [=========>....................] - ETA: 1:08:43 - loss: 0.6143 - binary_accuracy: 0.6699
+298/848 [=========>....................] - ETA: 1:08:27 - loss: 0.6144 - binary_accuracy: 0.6698
+299/848 [=========>....................] - ETA: 1:08:11 - loss: 0.6143 - binary_accuracy: 0.6700
+300/848 [=========>....................] - ETA: 1:07:55 - loss: 0.6141 - binary_accuracy: 0.6703
+301/848 [=========>....................] - ETA: 1:07:39 - loss: 0.6136 - binary_accuracy: 0.6706
+302/848 [=========>....................] - ETA: 1:07:22 - loss: 0.6129 - binary_accuracy: 0.6710
+303/848 [=========>....................] - ETA: 1:07:06 - loss: 0.6121 - binary_accuracy: 0.6716
+304/848 [=========>....................] - ETA: 1:06:50 - loss: 0.6114 - binary_accuracy: 0.6723
+305/848 [=========>....................] - ETA: 1:06:35 - loss: 0.6105 - binary_accuracy: 0.6729
+306/848 [=========>....................] - ETA: 1:06:19 - loss: 0.6097 - binary_accuracy: 0.6736
+307/848 [=========>....................] - ETA: 1:06:04 - loss: 0.6088 - binary_accuracy: 0.6742
+308/848 [=========>....................] - ETA: 1:05:48 - loss: 0.6079 - binary_accuracy: 0.6749
+309/848 [=========>....................] - ETA: 1:05:32 - loss: 0.6071 - binary_accuracy: 0.6756
+310/848 [=========>....................] - ETA: 1:05:17 - loss: 0.6062 - binary_accuracy: 0.6762
+311/848 [==========>...................] - ETA: 1:05:02 - loss: 0.6054 - binary_accuracy: 0.6769
+312/848 [==========>...................] - ETA: 1:04:47 - loss: 0.6045 - binary_accuracy: 0.6775
+313/848 [==========>...................] - ETA: 1:04:31 - loss: 0.6037 - binary_accuracy: 0.6781
+314/848 [==========>...................] - ETA: 1:04:17 - loss: 0.6029 - binary_accuracy: 0.6787Loading X_train file #  17 Part1_X_final_giga_long__file_3_18.pickle
+
+315/848 [==========>...................] - ETA: 1:04:02 - loss: 0.6020 - binary_accuracy: 0.6793Loaded X_final shape:  (2, 1, 3541)
+Loading Y_train file #  17 Part1_Y_final_giga_long__file_3_18.pickle
+Loaded Y_final shape:  (2, 1)
+Loading X_train file #  18 Part1_X_final_giga_long__file_4_19.pickle
+
 316/848 [==========>...................] - ETA: 1:03:47 - loss: 0.6012 - binary_accuracy: 0.6800
 317/848 [==========>...................] - ETA: 1:03:28 - loss: 0.5996 - binary_accuracy: 0.6810
 318/848 [==========>...................] - ETA: 1:03:09 - loss: 0.5992 - binary_accuracy: 0.6820Loaded X_final shape:  (351464, 1, 3541)

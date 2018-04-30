@@ -1,3 +1,676 @@
+/home/a1singh/.local/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+# of X_train files detected:  44
+# of Y_train files detected:  44
+main() : waiting for queue to fill first time ... cleaning & sleeping 20 secs
+main() : status of global variable flag:  False
+main() : length of var processes:  0
+factory called
+
+######## factory():Queue size< 31  ( 0 ) launch producers, right now we have 0
+getj() : got the lock & threadcounter= 0
+getj() : updated threadcounter= 1
+
+######## producer()  : Loading X_train file # 0 X_final_giga_long__file_1_10tstep2.pickle
+getj() : got the lock & threadcounter= 1
+getj() : updated threadcounter= 2
+
+######## producer()  : Loading X_train file # 1 X_final_giga_long__file_1_11tstep2.pickle
+getj() : got the lock & threadcounter= 2
+getj() : updated threadcounter= 3
+
+######## producer()  : Loading X_train file # 2 X_final_giga_long__file_1_1tstep2.pickle
+######## producer()  : Loaded X_train file # 1 (3, 2, 3541) X_final_giga_long__file_1_11tstep2.pickle
+######## producer()  : Loading Y_train file # 1 Y_final_giga_long__file_1_11tstep2.pickle
+######## producer()  : Loaded Y_train file # 1 (3, 1) Y_final_giga_long__file_1_11tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+Creating model Jtaper (Pick Train Save)...
+######## producer()  : Loaded X_train file # 2 (307381, 2, 3541) X_final_giga_long__file_1_1tstep2.pickle
+######## producer()  : Loading Y_train file # 2 Y_final_giga_long__file_1_1tstep2.pickle
+######## producer()  : Loaded Y_train file # 2 (307381, 1) Y_final_giga_long__file_1_1tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+######## producer()  : Loaded X_train file # 0 (322686, 2, 3541) X_final_giga_long__file_1_10tstep2.pickle
+######## producer()  : Loading Y_train file # 0 Y_final_giga_long__file_1_10tstep2.pickle
+######## producer()  : Loaded Y_train file # 0 (322686, 1) Y_final_giga_long__file_1_10tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+Initiating parallel GPU model
+2018-03-13 08:34:40.454276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:05:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2018-03-13 08:34:40.649370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 1 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:06:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2018-03-13 08:34:40.841317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 2 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:85:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2018-03-13 08:34:41.037267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 3 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:86:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2018-03-13 08:34:41.038607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1223] Device peer to peer matrix
+2018-03-13 08:34:41.039524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1229] DMA: 0 1 2 3 
+2018-03-13 08:34:41.039551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1239] 0:   Y Y N N 
+2018-03-13 08:34:41.039568: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1239] 1:   Y Y N N 
+2018-03-13 08:34:41.039582: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1239] 2:   N N Y Y 
+2018-03-13 08:34:41.039596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1239] 3:   N N Y Y 
+2018-03-13 08:34:41.039615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1308] Adding visible gpu devices: 0, 1, 2, 3
+2018-03-13 08:34:43.618619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10774 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:05:00.0, compute capability: 3.7)
+2018-03-13 08:34:43.710658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10772 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:06:00.0, compute capability: 3.7)
+2018-03-13 08:34:43.801374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10774 MB memory) -> physical GPU (device: 2, name: Tesla K80, pci bus id: 0000:85:00.0, compute capability: 3.7)
+2018-03-13 08:34:43.892307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 10772 MB memory) -> physical GPU (device: 3, name: Tesla K80, pci bus id: 0000:86:00.0, compute capability: 3.7)
+Compiling...
+Fit the Model...Calling fit_generator 
+Epoch 1/8
+
+  1/848 [..............................] - ETA: 3:27:47 - loss: 0.6930 - binary_accuracy: 1.0000
+  2/848 [..............................] - ETA: 2:28:57 - loss: 0.6920 - binary_accuracy: 0.8201
+  3/848 [..............................] - ETA: 2:10:44 - loss: 0.6904 - binary_accuracy: 0.7623
+  4/848 [..............................] - ETA: 1:39:42 - loss: 0.6745 - binary_accuracy: 0.8217
+  5/848 [..............................] - ETA: 1:40:18 - loss: 0.6724 - binary_accuracy: 0.7881
+  6/848 [..............................] - ETA: 1:41:31 - loss: 0.6679 - binary_accuracy: 0.7642
+  7/848 [..............................] - ETA: 1:41:39 - loss: 0.6686 - binary_accuracy: 0.7459
+  8/848 [..............................] - ETA: 1:42:14 - loss: 0.6637 - binary_accuracy: 0.7335
+  9/848 [..............................] - ETA: 1:42:23 - loss: 0.6608 - binary_accuracy: 0.7230
+ 10/848 [..............................] - ETA: 1:42:42 - loss: 0.6544 - binary_accuracy: 0.7148
+ 11/848 [..............................] - ETA: 1:42:41 - loss: 0.6506 - binary_accuracy: 0.7079
+######## factory():Queue size< 31  ( 30 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 3
+getj() : updated threadcounter= 4
+
+######## producer()  : Loading X_train file # 3 X_final_giga_long__file_1_2tstep2.pickle
+
+ 12/848 [..............................] - ETA: 1:42:01 - loss: 0.6427 - binary_accuracy: 0.7170
+ 13/848 [..............................] - ETA: 1:41:59 - loss: 0.6364 - binary_accuracy: 0.7132
+ 14/848 [..............................] - ETA: 1:42:22 - loss: 0.6241 - binary_accuracy: 0.7197
+ 15/848 [..............................] - ETA: 1:42:18 - loss: 0.6164 - binary_accuracy: 0.7202
+ 16/848 [..............................] - ETA: 1:42:40 - loss: 0.6083 - binary_accuracy: 0.7245
+ 17/848 [..............................] - ETA: 1:41:24 - loss: 0.5999 - binary_accuracy: 0.7284
+ 18/848 [..............................] - ETA: 1:42:03 - loss: 0.5939 - binary_accuracy: 0.7321
+ 19/848 [..............................] - ETA: 1:42:04 - loss: 0.5845 - binary_accuracy: 0.7361######## producer()  : Loaded X_train file # 3 (332609, 2, 3541) X_final_giga_long__file_1_2tstep2.pickle
+######## producer()  : Loading Y_train file # 3 Y_final_giga_long__file_1_2tstep2.pickle
+######## producer()  : Loaded Y_train file # 3 (332609, 1) Y_final_giga_long__file_1_2tstep2.pickle
+
+ 20/848 [..............................] - ETA: 1:42:20 - loss: 0.5776 - binary_accuracy: 0.7395######## producer()  : Setting flag = True; it was :  False
+
+ 21/848 [..............................] - ETA: 1:42:15 - loss: 0.5684 - binary_accuracy: 0.7453
+ 22/848 [..............................] - ETA: 1:42:25 - loss: 0.5634 - binary_accuracy: 0.7478
+ 23/848 [..............................] - ETA: 1:41:51 - loss: 0.5554 - binary_accuracy: 0.7528
+ 24/848 [..............................] - ETA: 1:41:58 - loss: 0.5513 - binary_accuracy: 0.7553
+ 25/848 [..............................] - ETA: 1:42:12 - loss: 0.5492 - binary_accuracy: 0.7562
+ 26/848 [..............................] - ETA: 1:42:04 - loss: 0.5418 - binary_accuracy: 0.7604
+ 27/848 [..............................] - ETA: 1:42:04 - loss: 0.5382 - binary_accuracy: 0.7626
+ 28/848 [..............................] - ETA: 1:42:07 - loss: 0.5345 - binary_accuracy: 0.7656
+ 29/848 [>.............................] - ETA: 1:41:56 - loss: 0.5280 - binary_accuracy: 0.7695
+ 30/848 [>.............................] - ETA: 1:41:56 - loss: 0.5257 - binary_accuracy: 0.7710
+ 31/848 [>.............................] - ETA: 1:42:23 - loss: 0.5224 - binary_accuracy: 0.7730
+ 32/848 [>.............................] - ETA: 1:42:13 - loss: 0.5171 - binary_accuracy: 0.7755
+ 33/848 [>.............................] - ETA: 1:42:11 - loss: 0.5149 - binary_accuracy: 0.7771
+ 34/848 [>.............................] - ETA: 1:42:13 - loss: 0.5116 - binary_accuracy: 0.7789
+ 35/848 [>.............................] - ETA: 1:41:41 - loss: 0.5070 - binary_accuracy: 0.7818
+ 36/848 [>.............................] - ETA: 1:41:39 - loss: 0.5051 - binary_accuracy: 0.7830
+ 37/848 [>.............................] - ETA: 1:41:44 - loss: 0.5022 - binary_accuracy: 0.7847
+ 38/848 [>.............................] - ETA: 1:41:37 - loss: 0.4983 - binary_accuracy: 0.7872
+ 39/848 [>.............................] - ETA: 1:41:36 - loss: 0.4967 - binary_accuracy: 0.7880
+ 40/848 [>.............................] - ETA: 1:41:37 - loss: 0.4941 - binary_accuracy: 0.7892
+ 41/848 [>.............................] - ETA: 1:41:09 - loss: 0.4904 - binary_accuracy: 0.7915
+ 42/848 [>.............................] - ETA: 1:41:05 - loss: 0.4893 - binary_accuracy: 0.7921
+ 43/848 [>.............................] - ETA: 1:40:48 - loss: 0.4868 - binary_accuracy: 0.7934
+ 44/848 [>.............................] - ETA: 1:40:40 - loss: 0.4833 - binary_accuracy: 0.7953
+ 45/848 [>.............................] - ETA: 1:40:38 - loss: 0.4822 - binary_accuracy: 0.7959
+ 46/848 [>.............................] - ETA: 1:40:37 - loss: 0.4801 - binary_accuracy: 0.7967
+ 47/848 [>.............................] - ETA: 1:40:29 - loss: 0.4770 - binary_accuracy: 0.7984
+ 48/848 [>.............................] - ETA: 1:40:16 - loss: 0.4762 - binary_accuracy: 0.7988
+ 49/848 [>.............................] - ETA: 1:40:15 - loss: 0.4742 - binary_accuracy: 0.7997
+######## factory():Queue size< 31  ( 14 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 4
+getj() : updated threadcounter= 5
+
+######## producer()  : Loading X_train file # 4 X_final_giga_long__file_1_3tstep2.pickle
+
+ 50/848 [>.............................] - ETA: 1:40:05 - loss: 0.4714 - binary_accuracy: 0.8014
+ 51/848 [>.............................] - ETA: 1:40:02 - loss: 0.4706 - binary_accuracy: 0.8017
+ 52/848 [>.............................] - ETA: 1:39:57 - loss: 0.4690 - binary_accuracy: 0.8025
+ 53/848 [>.............................] - ETA: 1:38:04 - loss: 0.4995 - binary_accuracy: 0.7874
+ 54/848 [>.............................] - ETA: 1:36:15 - loss: 0.4951 - binary_accuracy: 0.7913
+ 55/848 [>.............................] - ETA: 1:36:57 - loss: 0.4950 - binary_accuracy: 0.7910######## producer()  : Loaded X_train file # 4 (326755, 2, 3541) X_final_giga_long__file_1_3tstep2.pickle
+######## producer()  : Loading Y_train file # 4 Y_final_giga_long__file_1_3tstep2.pickle
+######## producer()  : Loaded Y_train file # 4 (326755, 1) Y_final_giga_long__file_1_3tstep2.pickle
+
+ 56/848 [>.............................] - ETA: 1:36:48 - loss: 0.4957 - binary_accuracy: 0.7902######## producer()  : Setting flag = True; it was :  False
+
+ 57/848 [=>............................] - ETA: 1:36:51 - loss: 0.4965 - binary_accuracy: 0.7895
+ 58/848 [=>............................] - ETA: 1:36:51 - loss: 0.4970 - binary_accuracy: 0.7892
+######## factory():Queue size< 31  ( 25 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 5
+getj() : updated threadcounter= 6
+
+######## producer()  : Loading X_train file # 5 X_final_giga_long__file_1_4tstep2.pickle
+
+ 59/848 [=>............................] - ETA: 1:36:59 - loss: 0.4989 - binary_accuracy: 0.7874
+ 60/848 [=>............................] - ETA: 1:37:01 - loss: 0.4989 - binary_accuracy: 0.7880
+ 61/848 [=>............................] - ETA: 1:37:02 - loss: 0.4999 - binary_accuracy: 0.7869
+ 62/848 [=>............................] - ETA: 1:36:44 - loss: 0.4989 - binary_accuracy: 0.7872
+ 63/848 [=>............................] - ETA: 1:36:44 - loss: 0.4992 - binary_accuracy: 0.7868######## producer()  : Loaded X_train file # 5 (328677, 2, 3541) X_final_giga_long__file_1_4tstep2.pickle
+######## producer()  : Loading Y_train file # 5 Y_final_giga_long__file_1_4tstep2.pickle
+######## producer()  : Loaded Y_train file # 5 (328677, 1) Y_final_giga_long__file_1_4tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+ 64/848 [=>............................] - ETA: 1:36:46 - loss: 0.4981 - binary_accuracy: 0.7872
+ 65/848 [=>............................] - ETA: 1:36:44 - loss: 0.4988 - binary_accuracy: 0.7869
+ 66/848 [=>............................] - ETA: 1:36:51 - loss: 0.4977 - binary_accuracy: 0.7874
+ 67/848 [=>............................] - ETA: 1:36:48 - loss: 0.4981 - binary_accuracy: 0.7872
+ 68/848 [=>............................] - ETA: 1:36:47 - loss: 0.4988 - binary_accuracy: 0.7869
+ 69/848 [=>............................] - ETA: 1:36:44 - loss: 0.4974 - binary_accuracy: 0.7876
+ 70/848 [=>............................] - ETA: 1:36:42 - loss: 0.4972 - binary_accuracy: 0.7876
+ 71/848 [=>............................] - ETA: 1:36:40 - loss: 0.4975 - binary_accuracy: 0.7874
+ 72/848 [=>............................] - ETA: 1:36:38 - loss: 0.4965 - binary_accuracy: 0.7881
+ 73/848 [=>............................] - ETA: 1:36:35 - loss: 0.4963 - binary_accuracy: 0.7885
+ 74/848 [=>............................] - ETA: 1:36:25 - loss: 0.4964 - binary_accuracy: 0.7885
+ 75/848 [=>............................] - ETA: 1:35:06 - loss: 0.4933 - binary_accuracy: 0.7913
+######## factory():Queue size< 31  ( 30 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 6
+getj() : updated threadcounter= 7
+
+######## producer()  : Loading X_train file # 6 X_final_giga_long__file_1_5tstep2.pickle
+
+ 76/848 [=>............................] - ETA: 1:35:05 - loss: 0.4929 - binary_accuracy: 0.7915
+ 77/848 [=>............................] - ETA: 1:35:12 - loss: 0.4931 - binary_accuracy: 0.7913
+ 78/848 [=>............................] - ETA: 1:35:10 - loss: 0.4926 - binary_accuracy: 0.7915
+ 79/848 [=>............................] - ETA: 1:35:07 - loss: 0.4930 - binary_accuracy: 0.7914######## producer()  : Loaded X_train file # 6 (297813, 2, 3541) X_final_giga_long__file_1_5tstep2.pickle
+######## producer()  : Loading Y_train file # 6 Y_final_giga_long__file_1_5tstep2.pickle
+######## producer()  : Loaded Y_train file # 6 (297813, 1) Y_final_giga_long__file_1_5tstep2.pickle
+
+ 80/848 [=>............................] - ETA: 1:35:09 - loss: 0.4925 - binary_accuracy: 0.7916######## producer()  : Setting flag = True; it was :  False
+
+ 81/848 [=>............................] - ETA: 1:35:00 - loss: 0.4925 - binary_accuracy: 0.7916
+ 82/848 [=>............................] - ETA: 1:34:56 - loss: 0.4919 - binary_accuracy: 0.7919
+ 83/848 [=>............................] - ETA: 1:34:56 - loss: 0.4918 - binary_accuracy: 0.7919
+ 84/848 [=>............................] - ETA: 1:34:51 - loss: 0.4911 - binary_accuracy: 0.7922
+ 85/848 [==>...........................] - ETA: 1:34:42 - loss: 0.4910 - binary_accuracy: 0.7921
+ 86/848 [==>...........................] - ETA: 1:34:38 - loss: 0.4910 - binary_accuracy: 0.7921
+ 87/848 [==>...........................] - ETA: 1:34:27 - loss: 0.4905 - binary_accuracy: 0.7924
+ 88/848 [==>...........................] - ETA: 1:34:18 - loss: 0.4898 - binary_accuracy: 0.7930
+ 89/848 [==>...........................] - ETA: 1:34:17 - loss: 0.4896 - binary_accuracy: 0.7931
+ 90/848 [==>...........................] - ETA: 1:34:12 - loss: 0.4892 - binary_accuracy: 0.7933
+ 91/848 [==>...........................] - ETA: 1:34:03 - loss: 0.4883 - binary_accuracy: 0.7939
+ 92/848 [==>...........................] - ETA: 1:33:59 - loss: 0.4882 - binary_accuracy: 0.7940
+ 93/848 [==>...........................] - ETA: 1:33:43 - loss: 0.4875 - binary_accuracy: 0.7943
+ 94/848 [==>...........................] - ETA: 1:33:35 - loss: 0.4867 - binary_accuracy: 0.7948
+ 95/848 [==>...........................] - ETA: 1:33:32 - loss: 0.4865 - binary_accuracy: 0.7949
+ 96/848 [==>...........................] - ETA: 1:33:29 - loss: 0.4858 - binary_accuracy: 0.7951
+ 97/848 [==>...........................] - ETA: 1:33:20 - loss: 0.4848 - binary_accuracy: 0.7957
+ 98/848 [==>...........................] - ETA: 1:33:17 - loss: 0.4846 - binary_accuracy: 0.7957
+ 99/848 [==>...........................] - ETA: 1:33:07 - loss: 0.4839 - binary_accuracy: 0.7959
+100/848 [==>...........................] - ETA: 1:32:58 - loss: 0.4826 - binary_accuracy: 0.7967
+101/848 [==>...........................] - ETA: 1:32:53 - loss: 0.4824 - binary_accuracy: 0.7967
+102/848 [==>...........................] - ETA: 1:32:48 - loss: 0.4817 - binary_accuracy: 0.7970
+103/848 [==>...........................] - ETA: 1:32:40 - loss: 0.4802 - binary_accuracy: 0.7981
+104/848 [==>...........................] - ETA: 1:32:36 - loss: 0.4799 - binary_accuracy: 0.7981
+105/848 [==>...........................] - ETA: 1:32:32 - loss: 0.4792 - binary_accuracy: 0.7983
+106/848 [==>...........................] - ETA: 1:32:22 - loss: 0.4777 - binary_accuracy: 0.7994
+107/848 [==>...........................] - ETA: 1:32:18 - loss: 0.4776 - binary_accuracy: 0.7993
+108/848 [==>...........................] - ETA: 1:32:14 - loss: 0.4769 - binary_accuracy: 0.7995
+######## factory():Queue size< 31  ( 17 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 7
+getj() : updated threadcounter= 8
+
+######## producer()  : Loading X_train file # 7 X_final_giga_long__file_1_6tstep2.pickle
+
+109/848 [==>...........................] - ETA: 1:32:05 - loss: 0.4753 - binary_accuracy: 0.8006
+110/848 [==>...........................] - ETA: 1:32:01 - loss: 0.4749 - binary_accuracy: 0.8006
+111/848 [==>...........................] - ETA: 1:31:08 - loss: 0.4752 - binary_accuracy: 0.8006
+112/848 [==>...........................] - ETA: 1:30:50 - loss: 0.4736 - binary_accuracy: 0.8017
+113/848 [==>...........................] - ETA: 1:30:49 - loss: 0.4737 - binary_accuracy: 0.8014######## producer()  : Loaded X_train file # 7 (264877, 2, 3541) X_final_giga_long__file_1_6tstep2.pickle
+######## producer()  : Loading Y_train file # 7 Y_final_giga_long__file_1_6tstep2.pickle
+######## producer()  : Loaded Y_train file # 7 (264877, 1) Y_final_giga_long__file_1_6tstep2.pickle
+
+114/848 [===>..........................] - ETA: 1:30:41 - loss: 0.4721 - binary_accuracy: 0.8024######## producer()  : Setting flag = True; it was :  False
+
+115/848 [===>..........................] - ETA: 1:30:28 - loss: 0.4721 - binary_accuracy: 0.8022
+116/848 [===>..........................] - ETA: 1:30:20 - loss: 0.4705 - binary_accuracy: 0.8032
+117/848 [===>..........................] - ETA: 1:30:18 - loss: 0.4704 - binary_accuracy: 0.8030
+118/848 [===>..........................] - ETA: 1:30:08 - loss: 0.4689 - binary_accuracy: 0.8040
+119/848 [===>..........................] - ETA: 1:29:48 - loss: 0.4685 - binary_accuracy: 0.8044
+120/848 [===>..........................] - ETA: 1:29:38 - loss: 0.4685 - binary_accuracy: 0.8042
+######## factory():Queue size< 31  ( 26 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 8
+getj() : updated threadcounter= 9
+
+######## producer()  : Loading X_train file # 8 X_final_giga_long__file_1_7tstep2.pickle
+
+121/848 [===>..........................] - ETA: 1:29:30 - loss: 0.4670 - binary_accuracy: 0.8051
+122/848 [===>..........................] - ETA: 1:29:17 - loss: 0.4665 - binary_accuracy: 0.8055
+123/848 [===>..........................] - ETA: 1:28:29 - loss: 0.4672 - binary_accuracy: 0.8047
+124/848 [===>..........................] - ETA: 1:28:22 - loss: 0.4658 - binary_accuracy: 0.8056
+125/848 [===>..........................] - ETA: 1:28:10 - loss: 0.4653 - binary_accuracy: 0.8060
+126/848 [===>..........................] - ETA: 1:28:03 - loss: 0.4639 - binary_accuracy: 0.8068
+127/848 [===>..........................] - ETA: 1:27:47 - loss: 0.4632 - binary_accuracy: 0.8073
+128/848 [===>..........................] - ETA: 1:27:40 - loss: 0.4619 - binary_accuracy: 0.8081######## producer()  : Loaded X_train file # 8 (327689, 2, 3541) X_final_giga_long__file_1_7tstep2.pickle
+######## producer()  : Loading Y_train file # 8 Y_final_giga_long__file_1_7tstep2.pickle
+######## producer()  : Loaded Y_train file # 8 (327689, 1) Y_final_giga_long__file_1_7tstep2.pickle
+
+129/848 [===>..........................] - ETA: 1:27:34 - loss: 0.4613 - binary_accuracy: 0.8085######## producer()  : Setting flag = True; it was :  False
+
+130/848 [===>..........................] - ETA: 1:27:27 - loss: 0.4599 - binary_accuracy: 0.8093
+131/848 [===>..........................] - ETA: 1:27:15 - loss: 0.4592 - binary_accuracy: 0.8097
+132/848 [===>..........................] - ETA: 1:27:08 - loss: 0.4578 - binary_accuracy: 0.8105
+133/848 [===>..........................] - ETA: 1:26:55 - loss: 0.4571 - binary_accuracy: 0.8108
+134/848 [===>..........................] - ETA: 1:26:46 - loss: 0.4588 - binary_accuracy: 0.8093
+135/848 [===>..........................] - ETA: 1:26:39 - loss: 0.4574 - binary_accuracy: 0.8101
+136/848 [===>..........................] - ETA: 1:26:28 - loss: 0.4566 - binary_accuracy: 0.8105
+137/848 [===>..........................] - ETA: 1:26:23 - loss: 0.4575 - binary_accuracy: 0.8093
+138/848 [===>..........................] - ETA: 1:25:41 - loss: 0.4570 - binary_accuracy: 0.8095
+######## factory():Queue size< 31  ( 30 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 9
+getj() : updated threadcounter= 10
+
+######## producer()  : Loading X_train file # 9 X_final_giga_long__file_1_8tstep2.pickle
+
+139/848 [===>..........................] - ETA: 1:25:30 - loss: 0.4562 - binary_accuracy: 0.8099
+140/848 [===>..........................] - ETA: 1:25:28 - loss: 0.4567 - binary_accuracy: 0.8096
+141/848 [===>..........................] - ETA: 1:25:16 - loss: 0.4558 - binary_accuracy: 0.8100
+142/848 [====>.........................] - ETA: 1:25:09 - loss: 0.4562 - binary_accuracy: 0.8097
+143/848 [====>.........................] - ETA: 1:24:58 - loss: 0.4553 - binary_accuracy: 0.8100
+144/848 [====>.........................] - ETA: 1:24:54 - loss: 0.4555 - binary_accuracy: 0.8097
+145/848 [====>.........................] - ETA: 1:24:44 - loss: 0.4545 - binary_accuracy: 0.8100
+146/848 [====>.........................] - ETA: 1:24:40 - loss: 0.4547 - binary_accuracy: 0.8098
+147/848 [====>.........................] - ETA: 1:24:32 - loss: 0.4536 - binary_accuracy: 0.8101
+148/848 [====>.........................] - ETA: 1:24:29 - loss: 0.4537 - binary_accuracy: 0.8099
+149/848 [====>.........................] - ETA: 1:24:16 - loss: 0.4526 - binary_accuracy: 0.8103
+150/848 [====>.........................] - ETA: 1:24:12 - loss: 0.4526 - binary_accuracy: 0.8102
+151/848 [====>.........................] - ETA: 1:24:05 - loss: 0.4516 - binary_accuracy: 0.8105######## producer()  : Loaded X_train file # 9 (331414, 2, 3541) X_final_giga_long__file_1_8tstep2.pickle
+######## producer()  : Loading Y_train file # 9 Y_final_giga_long__file_1_8tstep2.pickle
+######## producer()  : Loaded Y_train file # 9 (331414, 1) Y_final_giga_long__file_1_8tstep2.pickle
+
+152/848 [====>.........................] - ETA: 1:24:03 - loss: 0.4516 - binary_accuracy: 0.8104######## producer()  : Setting flag = True; it was :  False
+
+153/848 [====>.........................] - ETA: 1:23:52 - loss: 0.4506 - binary_accuracy: 0.8108
+154/848 [====>.........................] - ETA: 1:23:48 - loss: 0.4504 - binary_accuracy: 0.8108
+155/848 [====>.........................] - ETA: 1:23:37 - loss: 0.4494 - binary_accuracy: 0.8111
+156/848 [====>.........................] - ETA: 1:23:34 - loss: 0.4494 - binary_accuracy: 0.8111
+157/848 [====>.........................] - ETA: 1:23:30 - loss: 0.4501 - binary_accuracy: 0.8109
+158/848 [====>.........................] - ETA: 1:23:19 - loss: 0.4492 - binary_accuracy: 0.8111
+159/848 [====>.........................] - ETA: 1:23:15 - loss: 0.4492 - binary_accuracy: 0.8111
+160/848 [====>.........................] - ETA: 1:23:14 - loss: 0.4494 - binary_accuracy: 0.8110
+161/848 [====>.........................] - ETA: 1:23:04 - loss: 0.4484 - binary_accuracy: 0.8113
+162/848 [====>.........................] - ETA: 1:23:00 - loss: 0.4484 - binary_accuracy: 0.8113
+163/848 [====>.........................] - ETA: 1:22:56 - loss: 0.4483 - binary_accuracy: 0.8113
+164/848 [====>.........................] - ETA: 1:22:45 - loss: 0.4475 - binary_accuracy: 0.8115
+######## factory():Queue size< 31  ( 24 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 10
+getj() : updated threadcounter= 11
+
+######## producer()  : Loading X_train file # 10 X_final_giga_long__file_1_9tstep2.pickle
+
+165/848 [====>.........................] - ETA: 1:22:42 - loss: 0.4475 - binary_accuracy: 0.8115
+166/848 [====>.........................] - ETA: 1:22:39 - loss: 0.4474 - binary_accuracy: 0.8116
+167/848 [====>.........................] - ETA: 1:22:04 - loss: 0.4467 - binary_accuracy: 0.8120
+168/848 [====>.........................] - ETA: 1:22:00 - loss: 0.4466 - binary_accuracy: 0.8121
+169/848 [====>.........................] - ETA: 1:21:51 - loss: 0.4464 - binary_accuracy: 0.8122
+170/848 [=====>........................] - ETA: 1:21:47 - loss: 0.4462 - binary_accuracy: 0.8122######## producer()  : Loaded X_train file # 10 (330409, 2, 3541) X_final_giga_long__file_1_9tstep2.pickle
+######## producer()  : Loading Y_train file # 10 Y_final_giga_long__file_1_9tstep2.pickle
+######## producer()  : Loaded Y_train file # 10 (330409, 1) Y_final_giga_long__file_1_9tstep2.pickle
+
+171/848 [=====>........................] - ETA: 1:21:45 - loss: 0.4461 - binary_accuracy: 0.8123######## producer()  : Setting flag = True; it was :  False
+
+172/848 [=====>........................] - ETA: 1:21:41 - loss: 0.4458 - binary_accuracy: 0.8123
+173/848 [=====>........................] - ETA: 1:21:37 - loss: 0.4456 - binary_accuracy: 0.8123
+174/848 [=====>........................] - ETA: 1:21:32 - loss: 0.4454 - binary_accuracy: 0.8124
+175/848 [=====>........................] - ETA: 1:21:26 - loss: 0.4451 - binary_accuracy: 0.8125
+176/848 [=====>........................] - ETA: 1:21:22 - loss: 0.4480 - binary_accuracy: 0.8108
+177/848 [=====>........................] - ETA: 1:21:17 - loss: 0.4480 - binary_accuracy: 0.8107
+178/848 [=====>........................] - ETA: 1:21:13 - loss: 0.4484 - binary_accuracy: 0.8107
+179/848 [=====>........................] - ETA: 1:21:09 - loss: 0.4493 - binary_accuracy: 0.8103
+180/848 [=====>........................] - ETA: 1:21:04 - loss: 0.4497 - binary_accuracy: 0.8101
+######## factory():Queue size< 31  ( 29 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 11
+getj() : updated threadcounter= 12
+
+######## producer()  : Loading X_train file # 11 X_final_giga_long__file_2_12tstep2.pickle
+
+181/848 [=====>........................] - ETA: 1:20:59 - loss: 0.4499 - binary_accuracy: 0.8101
+182/848 [=====>........................] - ETA: 1:20:55 - loss: 0.4504 - binary_accuracy: 0.8098
+183/848 [=====>........................] - ETA: 1:20:24 - loss: 0.4502 - binary_accuracy: 0.8096
+184/848 [=====>........................] - ETA: 1:20:22 - loss: 0.4503 - binary_accuracy: 0.8095
+185/848 [=====>........................] - ETA: 1:20:21 - loss: 0.4505 - binary_accuracy: 0.8093
+186/848 [=====>........................] - ETA: 1:20:19 - loss: 0.4505 - binary_accuracy: 0.8093
+187/848 [=====>........................] - ETA: 1:20:15 - loss: 0.4506 - binary_accuracy: 0.8092######## producer()  : Loaded X_train file # 11 (328576, 2, 3541) X_final_giga_long__file_2_12tstep2.pickle
+######## producer()  : Loading Y_train file # 11 Y_final_giga_long__file_2_12tstep2.pickle
+######## producer()  : Loaded Y_train file # 11 (328576, 1) Y_final_giga_long__file_2_12tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+188/848 [=====>........................] - ETA: 1:20:13 - loss: 0.4505 - binary_accuracy: 0.8092
+189/848 [=====>........................] - ETA: 1:20:08 - loss: 0.4506 - binary_accuracy: 0.8092
+190/848 [=====>........................] - ETA: 1:20:03 - loss: 0.4504 - binary_accuracy: 0.8093
+191/848 [=====>........................] - ETA: 1:19:59 - loss: 0.4504 - binary_accuracy: 0.8092
+192/848 [=====>........................] - ETA: 1:19:54 - loss: 0.4535 - binary_accuracy: 0.8083
+193/848 [=====>........................] - ETA: 1:19:46 - loss: 0.4533 - binary_accuracy: 0.8085
+194/848 [=====>........................] - ETA: 1:19:41 - loss: 0.4534 - binary_accuracy: 0.8083
+195/848 [=====>........................] - ETA: 1:19:37 - loss: 0.4544 - binary_accuracy: 0.8072
+196/848 [=====>........................] - ETA: 1:19:32 - loss: 0.4544 - binary_accuracy: 0.8074
+197/848 [=====>........................] - ETA: 1:19:27 - loss: 0.4549 - binary_accuracy: 0.8073
+198/848 [======>.......................] - ETA: 1:19:23 - loss: 0.4553 - binary_accuracy: 0.8068
+199/848 [======>.......................] - ETA: 1:19:15 - loss: 0.4555 - binary_accuracy: 0.8069
+200/848 [======>.......................] - ETA: 1:19:05 - loss: 0.4558 - binary_accuracy: 0.8068
+201/848 [======>.......................] - ETA: 1:19:01 - loss: 0.4559 - binary_accuracy: 0.8066
+202/848 [======>.......................] - ETA: 1:18:57 - loss: 0.4558 - binary_accuracy: 0.8066
+203/848 [======>.......................] - ETA: 1:18:51 - loss: 0.4560 - binary_accuracy: 0.8066
+204/848 [======>.......................] - ETA: 1:18:46 - loss: 0.4559 - binary_accuracy: 0.8069
+205/848 [======>.......................] - ETA: 1:18:41 - loss: 0.4559 - binary_accuracy: 0.8068
+206/848 [======>.......................] - ETA: 1:18:36 - loss: 0.4558 - binary_accuracy: 0.8069
+207/848 [======>.......................] - ETA: 1:18:32 - loss: 0.4555 - binary_accuracy: 0.8073
+208/848 [======>.......................] - ETA: 1:18:26 - loss: 0.4554 - binary_accuracy: 0.8073
+######## factory():Queue size< 31  ( 22 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 12
+getj() : updated threadcounter= 13
+
+######## producer()  : Loading X_train file # 12 X_final_giga_long__file_2_13tstep2.pickle
+
+209/848 [======>.......................] - ETA: 1:18:22 - loss: 0.4553 - binary_accuracy: 0.8074
+210/848 [======>.......................] - ETA: 1:18:17 - loss: 0.4549 - binary_accuracy: 0.8074
+211/848 [======>.......................] - ETA: 1:17:49 - loss: 0.4541 - binary_accuracy: 0.8080
+212/848 [======>.......................] - ETA: 1:17:41 - loss: 0.4540 - binary_accuracy: 0.8081
+213/848 [======>.......................] - ETA: 1:17:34 - loss: 0.4535 - binary_accuracy: 0.8084
+214/848 [======>.......................] - ETA: 1:17:30 - loss: 0.4533 - binary_accuracy: 0.8085
+215/848 [======>.......................] - ETA: 1:17:25 - loss: 0.4528 - binary_accuracy: 0.8088######## producer()  : Loaded X_train file # 12 (327203, 2, 3541) X_final_giga_long__file_2_13tstep2.pickle
+######## producer()  : Loading Y_train file # 12 Y_final_giga_long__file_2_13tstep2.pickle
+######## producer()  : Loaded Y_train file # 12 (327203, 1) Y_final_giga_long__file_2_13tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+216/848 [======>.......................] - ETA: 1:17:20 - loss: 0.4525 - binary_accuracy: 0.8089
+217/848 [======>.......................] - ETA: 1:17:14 - loss: 0.4521 - binary_accuracy: 0.8092
+218/848 [======>.......................] - ETA: 1:17:10 - loss: 0.4517 - binary_accuracy: 0.8093
+219/848 [======>.......................] - ETA: 1:17:05 - loss: 0.4512 - binary_accuracy: 0.8096
+220/848 [======>.......................] - ETA: 1:16:59 - loss: 0.4511 - binary_accuracy: 0.8097
+221/848 [======>.......................] - ETA: 1:16:57 - loss: 0.4507 - binary_accuracy: 0.8098
+222/848 [======>.......................] - ETA: 1:16:52 - loss: 0.4502 - binary_accuracy: 0.8102
+223/848 [======>.......................] - ETA: 1:16:46 - loss: 0.4501 - binary_accuracy: 0.8102
+224/848 [======>.......................] - ETA: 1:16:36 - loss: 0.4498 - binary_accuracy: 0.8104
+225/848 [======>.......................] - ETA: 1:16:30 - loss: 0.4492 - binary_accuracy: 0.8108
+226/848 [======>.......................] - ETA: 1:16:24 - loss: 0.4490 - binary_accuracy: 0.8109
+227/848 [=======>......................] - ETA: 1:16:19 - loss: 0.4486 - binary_accuracy: 0.8111
+######## factory():Queue size< 31  ( 24 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 13
+getj() : updated threadcounter= 14
+
+######## producer()  : Loading X_train file # 13 X_final_giga_long__file_2_14tstep2.pickle
+
+228/848 [=======>......................] - ETA: 1:16:14 - loss: 0.4480 - binary_accuracy: 0.8115
+229/848 [=======>......................] - ETA: 1:16:08 - loss: 0.4477 - binary_accuracy: 0.8115
+230/848 [=======>......................] - ETA: 1:15:42 - loss: 0.4479 - binary_accuracy: 0.8114
+231/848 [=======>......................] - ETA: 1:15:33 - loss: 0.4474 - binary_accuracy: 0.8117
+232/848 [=======>......................] - ETA: 1:15:28 - loss: 0.4472 - binary_accuracy: 0.8118
+233/848 [=======>......................] - ETA: 1:15:23 - loss: 0.4468 - binary_accuracy: 0.8120
+234/848 [=======>......................] - ETA: 1:15:17 - loss: 0.4465 - binary_accuracy: 0.8121######## producer()  : Loaded X_train file # 13 (315945, 2, 3541) X_final_giga_long__file_2_14tstep2.pickle
+######## producer()  : Loading Y_train file # 13 Y_final_giga_long__file_2_14tstep2.pickle
+######## producer()  : Loaded Y_train file # 13 (315945, 1) Y_final_giga_long__file_2_14tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+235/848 [=======>......................] - ETA: 1:15:12 - loss: 0.4460 - binary_accuracy: 0.8124
+236/848 [=======>......................] - ETA: 1:15:06 - loss: 0.4458 - binary_accuracy: 0.8125
+237/848 [=======>......................] - ETA: 1:14:58 - loss: 0.4453 - binary_accuracy: 0.8127
+238/848 [=======>......................] - ETA: 1:14:50 - loss: 0.4451 - binary_accuracy: 0.8128
+239/848 [=======>......................] - ETA: 1:14:43 - loss: 0.4479 - binary_accuracy: 0.8117
+240/848 [=======>......................] - ETA: 1:14:38 - loss: 0.4478 - binary_accuracy: 0.8117
+241/848 [=======>......................] - ETA: 1:14:32 - loss: 0.4482 - binary_accuracy: 0.8113
+242/848 [=======>......................] - ETA: 1:14:25 - loss: 0.4496 - binary_accuracy: 0.8102
+243/848 [=======>......................] - ETA: 1:14:17 - loss: 0.4494 - binary_accuracy: 0.8105
+######## factory():Queue size< 31  ( 29 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 14
+getj() : updated threadcounter= 15
+
+######## producer()  : Loading X_train file # 14 X_final_giga_long__file_2_15tstep2.pickle
+
+244/848 [=======>......................] - ETA: 1:14:12 - loss: 0.4495 - binary_accuracy: 0.8106
+245/848 [=======>......................] - ETA: 1:14:05 - loss: 0.4505 - binary_accuracy: 0.8097
+246/848 [=======>......................] - ETA: 1:13:41 - loss: 0.4503 - binary_accuracy: 0.8097
+247/848 [=======>......................] - ETA: 1:13:36 - loss: 0.4500 - binary_accuracy: 0.8099
+248/848 [=======>......................] - ETA: 1:13:31 - loss: 0.4509 - binary_accuracy: 0.8090######## producer()  : Loaded X_train file # 14 (310059, 2, 3541) X_final_giga_long__file_2_15tstep2.pickle
+######## producer()  : Loading Y_train file # 14 Y_final_giga_long__file_2_15tstep2.pickle
+######## producer()  : Loaded Y_train file # 14 (310059, 1) Y_final_giga_long__file_2_15tstep2.pickle
+
+249/848 [=======>......................] - ETA: 1:13:27 - loss: 0.4506 - binary_accuracy: 0.8092######## producer()  : Setting flag = True; it was :  False
+
+250/848 [=======>......................] - ETA: 1:13:19 - loss: 0.4514 - binary_accuracy: 0.8085
+251/848 [=======>......................] - ETA: 1:13:13 - loss: 0.4511 - binary_accuracy: 0.8086
+252/848 [=======>......................] - ETA: 1:13:07 - loss: 0.4519 - binary_accuracy: 0.8080
+253/848 [=======>......................] - ETA: 1:13:01 - loss: 0.4516 - binary_accuracy: 0.8082
+254/848 [=======>......................] - ETA: 1:12:54 - loss: 0.4530 - binary_accuracy: 0.8070
+255/848 [========>.....................] - ETA: 1:12:47 - loss: 0.4538 - binary_accuracy: 0.8063
+256/848 [========>.....................] - ETA: 1:12:37 - loss: 0.4535 - binary_accuracy: 0.8065
+257/848 [========>.....................] - ETA: 1:12:30 - loss: 0.4545 - binary_accuracy: 0.8054
+258/848 [========>.....................] - ETA: 1:12:24 - loss: 0.4552 - binary_accuracy: 0.8050
+259/848 [========>.....................] - ETA: 1:12:17 - loss: 0.4549 - binary_accuracy: 0.8052
+260/848 [========>.....................] - ETA: 1:12:10 - loss: 0.4558 - binary_accuracy: 0.8042
+261/848 [========>.....................] - ETA: 1:12:04 - loss: 0.4565 - binary_accuracy: 0.8037
+262/848 [========>.....................] - ETA: 1:11:59 - loss: 0.4561 - binary_accuracy: 0.8039
+263/848 [========>.....................] - ETA: 1:11:52 - loss: 0.4570 - binary_accuracy: 0.8030
+264/848 [========>.....................] - ETA: 1:11:46 - loss: 0.4576 - binary_accuracy: 0.8025
+265/848 [========>.....................] - ETA: 1:11:40 - loss: 0.4573 - binary_accuracy: 0.8027
+266/848 [========>.....................] - ETA: 1:11:33 - loss: 0.4581 - binary_accuracy: 0.8018
+267/848 [========>.....................] - ETA: 1:11:26 - loss: 0.4586 - binary_accuracy: 0.8014
+268/848 [========>.....................] - ETA: 1:11:20 - loss: 0.4583 - binary_accuracy: 0.8016
+269/848 [========>.....................] - ETA: 1:11:13 - loss: 0.4591 - binary_accuracy: 0.8008
+270/848 [========>.....................] - ETA: 1:11:05 - loss: 0.4595 - binary_accuracy: 0.8003
+271/848 [========>.....................] - ETA: 1:10:59 - loss: 0.4592 - binary_accuracy: 0.8005
+######## factory():Queue size< 31  ( 22 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 15
+getj() : updated threadcounter= 16
+
+######## producer()  : Loading X_train file # 15 X_final_giga_long__file_2_16tstep2.pickle
+
+272/848 [========>.....................] - ETA: 1:10:52 - loss: 0.4599 - binary_accuracy: 0.7997
+273/848 [========>.....................] - ETA: 1:10:46 - loss: 0.4603 - binary_accuracy: 0.7992
+274/848 [========>.....................] - ETA: 1:10:24 - loss: 0.4600 - binary_accuracy: 0.7987
+275/848 [========>.....................] - ETA: 1:10:17 - loss: 0.4608 - binary_accuracy: 0.7979
+276/848 [========>.....................] - ETA: 1:10:11 - loss: 0.4612 - binary_accuracy: 0.7975
+277/848 [========>.....................] - ETA: 1:10:05 - loss: 0.4619 - binary_accuracy: 0.7968######## producer()  : Loaded X_train file # 15 (329974, 2, 3541) X_final_giga_long__file_2_16tstep2.pickle
+######## producer()  : Loading Y_train file # 15 Y_final_giga_long__file_2_16tstep2.pickle
+######## producer()  : Loaded Y_train file # 15 (329974, 1) Y_final_giga_long__file_2_16tstep2.pickle
+
+278/848 [========>.....................] - ETA: 1:10:01 - loss: 0.4623 - binary_accuracy: 0.7963######## producer()  : Setting flag = True; it was :  False
+
+279/848 [========>.....................] - ETA: 1:09:55 - loss: 0.4630 - binary_accuracy: 0.7956
+280/848 [========>.....................] - ETA: 1:09:48 - loss: 0.4633 - binary_accuracy: 0.7951
+281/848 [========>.....................] - ETA: 1:09:42 - loss: 0.4640 - binary_accuracy: 0.7943
+282/848 [========>.....................] - ETA: 1:09:35 - loss: 0.4643 - binary_accuracy: 0.7939
+283/848 [=========>....................] - ETA: 1:09:29 - loss: 0.4649 - binary_accuracy: 0.7934
+284/848 [=========>....................] - ETA: 1:09:22 - loss: 0.4655 - binary_accuracy: 0.7927
+285/848 [=========>....................] - ETA: 1:09:15 - loss: 0.4658 - binary_accuracy: 0.7924
+286/848 [=========>....................] - ETA: 1:09:09 - loss: 0.4662 - binary_accuracy: 0.7921
+287/848 [=========>....................] - ETA: 1:09:02 - loss: 0.4668 - binary_accuracy: 0.7913
+288/848 [=========>....................] - ETA: 1:08:55 - loss: 0.4671 - binary_accuracy: 0.7910
+289/848 [=========>....................] - ETA: 1:08:49 - loss: 0.4674 - binary_accuracy: 0.7907
+290/848 [=========>....................] - ETA: 1:08:42 - loss: 0.4680 - binary_accuracy: 0.7901
+291/848 [=========>....................] - ETA: 1:08:35 - loss: 0.4682 - binary_accuracy: 0.7897
+######## factory():Queue size< 31  ( 23 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 16
+getj() : updated threadcounter= 17
+
+######## producer()  : Loading X_train file # 16 X_final_giga_long__file_2_17tstep2.pickle
+
+292/848 [=========>....................] - ETA: 1:08:29 - loss: 0.4684 - binary_accuracy: 0.7896
+293/848 [=========>....................] - ETA: 1:08:20 - loss: 0.4690 - binary_accuracy: 0.7889
+294/848 [=========>....................] - ETA: 1:08:00 - loss: 0.4693 - binary_accuracy: 0.7896
+295/848 [=========>....................] - ETA: 1:07:51 - loss: 0.4694 - binary_accuracy: 0.7895
+296/848 [=========>....................] - ETA: 1:07:45 - loss: 0.4701 - binary_accuracy: 0.7889
+297/848 [=========>....................] - ETA: 1:07:40 - loss: 0.4702 - binary_accuracy: 0.7889######## producer()  : Loaded X_train file # 16 (322212, 2, 3541) X_final_giga_long__file_2_17tstep2.pickle
+######## producer()  : Loading Y_train file # 16 Y_final_giga_long__file_2_17tstep2.pickle
+######## producer()  : Loaded Y_train file # 16 (322212, 1) Y_final_giga_long__file_2_17tstep2.pickle
+
+298/848 [=========>....................] - ETA: 1:07:35 - loss: 0.4709 - binary_accuracy: 0.7882######## producer()  : Setting flag = True; it was :  False
+
+299/848 [=========>....................] - ETA: 1:07:29 - loss: 0.4710 - binary_accuracy: 0.7882
+300/848 [=========>....................] - ETA: 1:07:19 - loss: 0.4718 - binary_accuracy: 0.7875
+301/848 [=========>....................] - ETA: 1:07:13 - loss: 0.4718 - binary_accuracy: 0.7876
+302/848 [=========>....................] - ETA: 1:07:06 - loss: 0.4723 - binary_accuracy: 0.7870
+303/848 [=========>....................] - ETA: 1:07:00 - loss: 0.4724 - binary_accuracy: 0.7870
+304/848 [=========>....................] - ETA: 1:06:54 - loss: 0.4725 - binary_accuracy: 0.7870
+305/848 [=========>....................] - ETA: 1:06:47 - loss: 0.4730 - binary_accuracy: 0.7864
+######## factory():Queue size< 31  ( 30 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 17
+getj() : updated threadcounter= 18
+
+######## producer()  : Loading X_train file # 17 X_final_giga_long__file_2_18tstep2.pickle
+
+306/848 [=========>....................] - ETA: 1:06:39 - loss: 0.4729 - binary_accuracy: 0.7865
+307/848 [=========>....................] - ETA: 1:06:33 - loss: 0.4728 - binary_accuracy: 0.7865
+308/848 [=========>....................] - ETA: 1:06:14 - loss: 0.4736 - binary_accuracy: 0.7860
+309/848 [=========>....................] - ETA: 1:06:05 - loss: 0.4734 - binary_accuracy: 0.7860
+310/848 [=========>....................] - ETA: 1:06:00 - loss: 0.4734 - binary_accuracy: 0.7860######## producer()  : Loaded X_train file # 17 (329186, 2, 3541) X_final_giga_long__file_2_18tstep2.pickle
+######## producer()  : Loading Y_train file # 17 Y_final_giga_long__file_2_18tstep2.pickle
+######## producer()  : Loaded Y_train file # 17 (329186, 1) Y_final_giga_long__file_2_18tstep2.pickle
+
+311/848 [==========>...................] - ETA: 1:05:57 - loss: 0.4731 - binary_accuracy: 0.7862######## producer()  : Setting flag = True; it was :  False
+
+312/848 [==========>...................] - ETA: 1:05:50 - loss: 0.4730 - binary_accuracy: 0.7863
+313/848 [==========>...................] - ETA: 1:05:42 - loss: 0.4729 - binary_accuracy: 0.7865
+314/848 [==========>...................] - ETA: 1:05:36 - loss: 0.4728 - binary_accuracy: 0.7865
+315/848 [==========>...................] - ETA: 1:05:30 - loss: 0.4725 - binary_accuracy: 0.7867
+316/848 [==========>...................] - ETA: 1:05:23 - loss: 0.4732 - binary_accuracy: 0.7864
+317/848 [==========>...................] - ETA: 1:05:17 - loss: 0.4730 - binary_accuracy: 0.7864
+318/848 [==========>...................] - ETA: 1:05:11 - loss: 0.4727 - binary_accuracy: 0.7867
+319/848 [==========>...................] - ETA: 1:05:02 - loss: 0.4731 - binary_accuracy: 0.7864
+320/848 [==========>...................] - ETA: 1:04:55 - loss: 0.4729 - binary_accuracy: 0.7865
+321/848 [==========>...................] - ETA: 1:04:49 - loss: 0.4726 - binary_accuracy: 0.7868
+322/848 [==========>...................] - ETA: 1:04:42 - loss: 0.4728 - binary_accuracy: 0.7867
+323/848 [==========>...................] - ETA: 1:04:36 - loss: 0.4726 - binary_accuracy: 0.7868
+324/848 [==========>...................] - ETA: 1:04:29 - loss: 0.4722 - binary_accuracy: 0.7870
+325/848 [==========>...................] - ETA: 1:04:23 - loss: 0.4723 - binary_accuracy: 0.7870
+326/848 [==========>...................] - ETA: 1:04:17 - loss: 0.4721 - binary_accuracy: 0.7872
+327/848 [==========>...................] - ETA: 1:04:10 - loss: 0.4716 - binary_accuracy: 0.7874
+328/848 [==========>...................] - ETA: 1:04:04 - loss: 0.4716 - binary_accuracy: 0.7875
+329/848 [==========>...................] - ETA: 1:03:57 - loss: 0.4714 - binary_accuracy: 0.7876
+330/848 [==========>...................] - ETA: 1:03:51 - loss: 0.4709 - binary_accuracy: 0.7879
+331/848 [==========>...................] - ETA: 1:03:44 - loss: 0.4709 - binary_accuracy: 0.7879
+332/848 [==========>...................] - ETA: 1:03:38 - loss: 0.4706 - binary_accuracy: 0.7881
+333/848 [==========>...................] - ETA: 1:03:31 - loss: 0.4702 - binary_accuracy: 0.7884
+334/848 [==========>...................] - ETA: 1:03:24 - loss: 0.4701 - binary_accuracy: 0.7884
+335/848 [==========>...................] - ETA: 1:03:18 - loss: 0.4698 - binary_accuracy: 0.7886
+######## factory():Queue size< 31  ( 21 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 18
+getj() : updated threadcounter= 19
+
+######## producer()  : Loading X_train file # 18 X_final_giga_long__file_2_19tstep2.pickle
+
+336/848 [==========>...................] - ETA: 1:03:11 - loss: 0.4694 - binary_accuracy: 0.7888
+337/848 [==========>...................] - ETA: 1:03:05 - loss: 0.4693 - binary_accuracy: 0.7889
+338/848 [==========>...................] - ETA: 1:02:47 - loss: 0.4694 - binary_accuracy: 0.7889
+339/848 [==========>...................] - ETA: 1:02:41 - loss: 0.4690 - binary_accuracy: 0.7891
+340/848 [===========>..................] - ETA: 1:02:32 - loss: 0.4689 - binary_accuracy: 0.7891
+341/848 [===========>..................] - ETA: 1:02:26 - loss: 0.4684 - binary_accuracy: 0.7894######## producer()  : Loaded X_train file # 18 (329684, 2, 3541) X_final_giga_long__file_2_19tstep2.pickle
+######## producer()  : Loading Y_train file # 18 Y_final_giga_long__file_2_19tstep2.pickle
+######## producer()  : Loaded Y_train file # 18 (329684, 1) Y_final_giga_long__file_2_19tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+342/848 [===========>..................] - ETA: 1:02:20 - loss: 0.4683 - binary_accuracy: 0.7894
+343/848 [===========>..................] - ETA: 1:02:14 - loss: 0.4678 - binary_accuracy: 0.7897
+344/848 [===========>..................] - ETA: 1:02:07 - loss: 0.4677 - binary_accuracy: 0.7897
+345/848 [===========>..................] - ETA: 1:02:00 - loss: 0.4672 - binary_accuracy: 0.7900
+346/848 [===========>..................] - ETA: 1:01:54 - loss: 0.4674 - binary_accuracy: 0.7899
+347/848 [===========>..................] - ETA: 1:01:47 - loss: 0.4672 - binary_accuracy: 0.7900
+348/848 [===========>..................] - ETA: 1:01:41 - loss: 0.4668 - binary_accuracy: 0.7902
+349/848 [===========>..................] - ETA: 1:01:34 - loss: 0.4669 - binary_accuracy: 0.7901
+350/848 [===========>..................] - ETA: 1:01:27 - loss: 0.4667 - binary_accuracy: 0.7901
+351/848 [===========>..................] - ETA: 1:01:20 - loss: 0.4663 - binary_accuracy: 0.7903
+352/848 [===========>..................] - ETA: 1:01:13 - loss: 0.4663 - binary_accuracy: 0.7903
+353/848 [===========>..................] - ETA: 1:01:07 - loss: 0.4661 - binary_accuracy: 0.7904
+354/848 [===========>..................] - ETA: 1:01:00 - loss: 0.4656 - binary_accuracy: 0.7907
+######## factory():Queue size< 31  ( 23 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 19
+getj() : updated threadcounter= 20
+
+######## producer()  : Loading X_train file # 19 X_final_giga_long__file_2_20tstep2.pickle
+
+355/848 [===========>..................] - ETA: 1:00:53 - loss: 0.4656 - binary_accuracy: 0.7907
+356/848 [===========>..................] - ETA: 1:00:46 - loss: 0.4654 - binary_accuracy: 0.7907
+357/848 [===========>..................] - ETA: 1:00:29 - loss: 0.4655 - binary_accuracy: 0.7911
+358/848 [===========>..................] - ETA: 1:00:23 - loss: 0.4654 - binary_accuracy: 0.7911
+359/848 [===========>..................] - ETA: 1:00:17 - loss: 0.4652 - binary_accuracy: 0.7912######## producer()  : Loaded X_train file # 19 (286165, 2, 3541) X_final_giga_long__file_2_20tstep2.pickle
+######## producer()  : Loading Y_train file # 19 Y_final_giga_long__file_2_20tstep2.pickle
+
+360/848 [===========>..................] - ETA: 1:00:09 - loss: 0.4652 - binary_accuracy: 0.7913######## producer()  : Loaded Y_train file # 19 (286165, 1) Y_final_giga_long__file_2_20tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+361/848 [===========>..................] - ETA: 1:00:00 - loss: 0.4650 - binary_accuracy: 0.7914
+362/848 [===========>..................] - ETA: 59:53 - loss: 0.4649 - binary_accuracy: 0.7915  
+363/848 [===========>..................] - ETA: 59:45 - loss: 0.4648 - binary_accuracy: 0.7916
+364/848 [===========>..................] - ETA: 59:39 - loss: 0.4647 - binary_accuracy: 0.7917
+365/848 [===========>..................] - ETA: 59:31 - loss: 0.4663 - binary_accuracy: 0.7907
+366/848 [===========>..................] - ETA: 59:22 - loss: 0.4661 - binary_accuracy: 0.7908
+367/848 [===========>..................] - ETA: 59:15 - loss: 0.4661 - binary_accuracy: 0.7909
+368/848 [============>.................] - ETA: 59:07 - loss: 0.4667 - binary_accuracy: 0.7904
+369/848 [============>.................] - ETA: 59:01 - loss: 0.4666 - binary_accuracy: 0.7905
+######## factory():Queue size< 31  ( 29 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 20
+getj() : updated threadcounter= 21
+
+######## producer()  : Loading X_train file # 20 X_final_giga_long__file_2_21tstep2.pickle
+
+370/848 [============>.................] - ETA: 58:52 - loss: 0.4666 - binary_accuracy: 0.7905
+371/848 [============>.................] - ETA: 58:44 - loss: 0.4671 - binary_accuracy: 0.7901
+372/848 [============>.................] - ETA: 58:28 - loss: 0.4673 - binary_accuracy: 0.7897
+373/848 [============>.................] - ETA: 58:21 - loss: 0.4672 - binary_accuracy: 0.7897
+374/848 [============>.................] - ETA: 58:13 - loss: 0.4678 - binary_accuracy: 0.7892
+375/848 [============>.................] - ETA: 58:07 - loss: 0.4679 - binary_accuracy: 0.7892
+376/848 [============>.................] - ETA: 57:59 - loss: 0.4684 - binary_accuracy: 0.7888######## producer()  : Loaded X_train file # 20 (313647, 2, 3541) X_final_giga_long__file_2_21tstep2.pickle
+######## producer()  : Loading Y_train file # 20 Y_final_giga_long__file_2_21tstep2.pickle
+######## producer()  : Loaded Y_train file # 20 (313647, 1) Y_final_giga_long__file_2_21tstep2.pickle
+
+377/848 [============>.................] - ETA: 57:53 - loss: 0.4684 - binary_accuracy: 0.7888######## producer()  : Setting flag = True; it was :  False
+
+378/848 [============>.................] - ETA: 57:44 - loss: 0.4689 - binary_accuracy: 0.7885
+379/848 [============>.................] - ETA: 57:37 - loss: 0.4690 - binary_accuracy: 0.7884
+380/848 [============>.................] - ETA: 57:30 - loss: 0.4695 - binary_accuracy: 0.7881
+381/848 [============>.................] - ETA: 57:23 - loss: 0.4699 - binary_accuracy: 0.7878
+382/848 [============>.................] - ETA: 57:16 - loss: 0.4699 - binary_accuracy: 0.7878
+383/848 [============>.................] - ETA: 57:06 - loss: 0.4703 - binary_accuracy: 0.7875
+384/848 [============>.................] - ETA: 56:59 - loss: 0.4707 - binary_accuracy: 0.7872
+385/848 [============>.................] - ETA: 56:51 - loss: 0.4707 - binary_accuracy: 0.7873
+386/848 [============>.................] - ETA: 56:43 - loss: 0.4711 - binary_accuracy: 0.7870
+387/848 [============>.................] - ETA: 56:36 - loss: 0.4715 - binary_accuracy: 0.7867
+388/848 [============>.................] - ETA: 56:29 - loss: 0.4714 - binary_accuracy: 0.7868
+389/848 [============>.................] - ETA: 56:21 - loss: 0.4718 - binary_accuracy: 0.7865
+390/848 [============>.................] - ETA: 56:14 - loss: 0.4722 - binary_accuracy: 0.7862
+391/848 [============>.................] - ETA: 56:07 - loss: 0.4721 - binary_accuracy: 0.7863
+392/848 [============>.................] - ETA: 55:59 - loss: 0.4725 - binary_accuracy: 0.7861
+393/848 [============>.................] - ETA: 55:51 - loss: 0.4728 - binary_accuracy: 0.7858
+394/848 [============>.................] - ETA: 55:44 - loss: 0.4727 - binary_accuracy: 0.7859
+395/848 [============>.................] - ETA: 55:36 - loss: 0.4730 - binary_accuracy: 0.7857
+396/848 [=============>................] - ETA: 55:29 - loss: 0.4734 - binary_accuracy: 0.7854
+397/848 [=============>................] - ETA: 55:22 - loss: 0.4732 - binary_accuracy: 0.7855
+######## factory():Queue size< 31  ( 22 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 21
+getj() : updated threadcounter= 22
+
+######## producer()  : Loading X_train file # 21 X_final_giga_long__file_2_22tstep2.pickle
+######## producer()  : Loaded X_train file # 21 (3, 2, 3541) X_final_giga_long__file_2_22tstep2.pickle
+######## producer()  : Loading Y_train file # 21 Y_final_giga_long__file_2_22tstep2.pickle
+######## producer()  : Loaded Y_train file # 21 (3, 1) Y_final_giga_long__file_2_22tstep2.pickle
+######## producer()  : Setting flag = True; it was :  False
+
+398/848 [=============>................] - ETA: 55:14 - loss: 0.4736 - binary_accuracy: 0.7853
+399/848 [=============>................] - ETA: 55:06 - loss: 0.4739 - binary_accuracy: 0.7851
+400/848 [=============>................] - ETA: 54:51 - loss: 0.4730 - binary_accuracy: 0.7856
+401/848 [=============>................] - ETA: 54:43 - loss: 0.4733 - binary_accuracy: 0.7854
+402/848 [=============>................] - ETA: 54:36 - loss: 0.4737 - binary_accuracy: 0.7852
+403/848 [=============>................] - ETA: 54:21 - loss: 0.4727 - binary_accuracy: 0.7857
+404/848 [=============>................] - ETA: 54:14 - loss: 0.4731 - binary_accuracy: 0.7854
+405/848 [=============>................] - ETA: 54:07 - loss: 0.4735 - binary_accuracy: 0.7852
+406/848 [=============>................] - ETA: 53:52 - loss: 0.4724 - binary_accuracy: 0.7857
+407/848 [=============>................] - ETA: 53:43 - loss: 0.4727 - binary_accuracy: 0.7855
+408/848 [=============>................] - ETA: 53:36 - loss: 0.4730 - binary_accuracy: 0.7853
+######## factory():Queue size< 31  ( 13 ) launch producers, right now we have 2
+getj() : got the lock & threadcounter= 22
+getj() : updated threadcounter= 23
+
+######## producer()  : Loading X_train file # 22 X_final_giga_long__file_3_23tstep2.pickle
+
+409/848 [=============>................] - ETA: 53:29 - loss: 0.4734 - binary_accuracy: 0.7850
 410/848 [=============>................] - ETA: 53:22 - loss: 0.4737 - binary_accuracy: 0.7849
 411/848 [=============>................] - ETA: 53:15 - loss: 0.4740 - binary_accuracy: 0.7846
 412/848 [=============>................] - ETA: 53:08 - loss: 0.4743 - binary_accuracy: 0.7844
