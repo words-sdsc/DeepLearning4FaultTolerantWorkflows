@@ -1,0 +1,99 @@
+/usr/local/lib/python3.5/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Creating model...
+Initiating parallel GPU model
+2018-04-20 14:26:15.154687: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-04-20 14:26:15.807329: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:da:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-04-20 14:26:16.396669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:db:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-04-20 14:26:16.402815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1227] Device peer to peer matrix
+2018-04-20 14:26:16.403349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1233] DMA: 0 1 
+2018-04-20 14:26:16.403365: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 0:   Y Y 
+2018-04-20 14:26:16.403372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1243] 1:   Y Y 
+2018-04-20 14:26:16.403489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0, 1
+2018-04-20 14:26:18.092692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10415 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:da:00.0, compute capability: 6.1)
+2018-04-20 14:26:18.273302: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10415 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:db:00.0, compute capability: 6.1)
+Compiling...
+Loading Model weights before Testing
+Calling printTestResults() for testing the model:
+Tester function called...using all test files
+# of X_test files detected:  16
+# of Y_test files detected:  16
+Loading X_test file #  0 X_test_giga_long__file_1_1.pickle
+Loading Y_test file #  0 Y_test_giga_long__file_1_1.pickle
+####
+Loading X_test file #  1 X_test_giga_long__file_1_10.pickle
+Loading Y_test file #  1 Y_test_giga_long__file_1_10.pickle
+####
+Loading X_test file #  2 X_test_giga_long__file_1_11.pickle
+Loading Y_test file #  2 Y_test_giga_long__file_1_11.pickle
+####
+Loading X_test file #  3 X_test_giga_long__file_1_12.pickle
+Loading Y_test file #  3 Y_test_giga_long__file_1_12.pickle
+####
+Loading X_test file #  4 X_test_giga_long__file_1_13.pickle
+Loading Y_test file #  4 Y_test_giga_long__file_1_13.pickle
+####
+Loading X_test file #  5 X_test_giga_long__file_1_14.pickle
+Loading Y_test file #  5 Y_test_giga_long__file_1_14.pickle
+####
+Loading X_test file #  6 X_test_giga_long__file_1_15.pickle
+Loading Y_test file #  6 Y_test_giga_long__file_1_15.pickle
+####
+Loading X_test file #  7 X_test_giga_long__file_1_16.pickle
+Loading Y_test file #  7 Y_test_giga_long__file_1_16.pickle
+####
+Loading X_test file #  8 X_test_giga_long__file_1_2.pickle
+Loading Y_test file #  8 Y_test_giga_long__file_1_2.pickle
+####
+Loading X_test file #  9 X_test_giga_long__file_1_3.pickle
+Loading Y_test file #  9 Y_test_giga_long__file_1_3.pickle
+####
+Loading X_test file #  10 X_test_giga_long__file_1_4.pickle
+Loading Y_test file #  10 Y_test_giga_long__file_1_4.pickle
+####
+Loading X_test file #  11 X_test_giga_long__file_1_5.pickle
+Loading Y_test file #  11 Y_test_giga_long__file_1_5.pickle
+####
+Loading X_test file #  12 X_test_giga_long__file_1_6.pickle
+Loading Y_test file #  12 Y_test_giga_long__file_1_6.pickle
+####
+Loading X_test file #  13 X_test_giga_long__file_1_7.pickle
+Loading Y_test file #  13 Y_test_giga_long__file_1_7.pickle
+####
+Loading X_test file #  14 X_test_giga_long__file_1_8.pickle
+Loading Y_test file #  14 Y_test_giga_long__file_1_8.pickle
+####
+Loading X_test file #  15 X_test_giga_long__file_1_9.pickle
+Loading Y_test file #  15 Y_test_giga_long__file_1_9.pickle
+####
+********* Test Results Start **************
+********* Model Fingerprint >> ************
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+kubernetes_train_[80-20]_giga_long_mltithrdedgentr_PikTranSav_Mdl_[J_Filternet_tstep1]_epch_75_kube_binar_crsentr_adm_binar_acc.py
+********* Model Fingerprint << ************
+Len of Y_true :  3517991
+Len of Y_pred :  3517991
+Overall accuracy on test set:  0.8398685499763928
+Calculating Score: 
+precision    : [0.84927181 0.82030909]
+recall       : [0.90767269 0.72348211]
+fscore       : [0.87750162 0.7688591 ]
+support      : [2222950 1295041]
+Confusion matrix:
+Predicted      0.0      1.0      All
+True                                
+0          2017711   205239  2222950
+1           358102   936939  1295041
+All        2375813  1142178  3517991
+*********Test Results End**************
+Test Program has reach the last line of execution
